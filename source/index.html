@@ -38,7 +38,7 @@
     <section class="promo-info">
       <div class="promo-info__wrapper container">
         <h2 class="promo-info__title">Функциональное питание для котов</h2>
-        <b class="promo-info__text">Занялся собой? Займись котом!</b>
+        <p class="promo-info__text">Занялся собой? Займись котом!</p>
         <a href="#" class="promo-info__button button">подобрать программу</a>
         <img src="img/promo-product.png" alt="Cat Energy Pro с курицей" width="280" height="270">
       </div>
@@ -49,9 +49,7 @@
       <div class="program__wrapper container">
         <ul class="program__list">
           <li class="program__item program__item--slim">
-            <div class="program__img">
-              <img src="img/icons/slim-icon.svg" alt="Похудение">
-            </div>
+            <img src="img/icons/slim-icon.svg" class="program__img" alt="Похудение" width="50" height="53">
             <h3 class="program__title">похудение</h3>
             <p class="program__description">
               Ваш кот весит больше собаки и&nbsp;почти утратил способность лазить по&nbsp;деревьям? Пора на&nbsp;диету!
@@ -60,9 +58,7 @@
             <a href="#" class="program__link">каталог slim</a>
           </li>
           <li class="program__item program__item--weight">
-            <div class="program__img">
-              <img src="img/icons/weight-icon.svg" alt="Набор массы">
-            </div>
+            <img src="img/icons/weight-icon.svg" class="program__img" alt="Набор массы" width="67" height="50">
             <h3 class="program__title">набор массы</h3>
             <p class="program__description">
               Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat Energy Pro поможет вашему коту
@@ -79,29 +75,23 @@
         <h2 class="features__title">Как это работает</h2>
         <ol class="features__list">
           <li class="features__item features__item--natural">
-            <div class="features__icon">
-              <img src="img/icons/natural-icon.svg" alt="Натуральные продукты" width="30" height="32">
-            </div>
+            <img src="img/icons/natural-icon.svg" class="features__icon" alt="Натуральные продукты" width="60"
+              height="60">
             <p class="features__description">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
           <li class="features__item features__item--powder">
-            <div class="features__icon">
-              <img src="img/icons/powder-icon.svg" alt="Порошок" width="29" height="31">
-            </div>
+            <img src="img/icons/powder-icon.svg" class="features__icon" alt="Порошок" width="60" height="60">
             <p class="features__description">Выпускается в&nbsp;виде порошка, который нужно лишь залить кипятком
               и&nbsp;готово.</p>
           </li>
           <li class="features__item features__item--eat">
-            <div class="features__icon">
-              <img src="img/icons/eat-icon.svg" alt="Функциональное питание" width="25" height="30">
-            </div>
+            <img src="img/icons/eat-icon.svg" class="features__icon" alt="Функциональное питание" width="60"
+              height="60">
             <p class="features__description">Замените один-два приема обычной еды на&nbsp;наше функциональное питание.
             </p>
           </li>
           <li class="features__item features__item--time">
-            <div class="features__icon">
-              <img src="img/icons/time-icon.svg" alt="Короткое время" width="32" height="33">
-            </div>
+            <img src="img/icons/time-icon.svg" class="features__icon" alt="Короткое время" width="60" height="60">
             <p class="features__description">Уже через месяц наслаждайтесь изменениями к&nbsp;лучшему вашего питомца!
             </p>
           </li>
@@ -143,9 +133,9 @@
           </ul>
           <div class="cat-slider__control">
             <span class="cat-slider__before">было</span>
-            <label for="cat-slider-input" class="visually-hidden"></label>
-            <input type="range" class="cat-slider__range" id="cat-slider-input" name="cat-slider" min="0" max="100"
-              value="50">
+            <label>
+              <input type="range" class="cat-slider__input" name="cat-slider" min="0" max="100" value="50">
+            </label>
             <span class="cat-slider__after">стало</span>
           </div>
         </div>
@@ -156,11 +146,11 @@
       <h2 class="visually-hidden">Как нас найти</h2>
       <div class="location__wrapper container">
         <div class="location__info-block">
-          <b class="location__invite">приглашаем к сотрудничеству дилеров!</b>
-          <address class="location__address">
+          <p class="location__invite">приглашаем к сотрудничеству дилеров!</p>
+          <div class="location__address">
             <p class="location__street">ул. Большая Конюшенная, д. 19/8</p>
             <p class="location__city">Санкт-Петербург</p>
-          </address>
+          </div>
           <div class="location__map">
             <img src="img/location-map.png" alt="Карта с адресом нашего офиса" width="320" height="362">
           </div>
@@ -171,25 +161,23 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper container">
       <a class="page-footer__logo site-logo">g
-        <img src="img/main-logo-text.svg" class="site-logo__text" alt="Логотип сайта Cat Energy" width="101" height="18">
+        <img src="img/main-logo-text.svg" class="site-logo__text" alt="Логотип сайта Cat Energy" width="101"
+          height="18">
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a href="#" class="social__link">
-              Мы в VK
+            <a href="#" class="social__link" title="Мы в VK">
               <img src="img/icons/vk-icon.svg" class="social__icon" alt="VK" width="23" height="16">
             </a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link">
-              Мы в Instagram
+            <a href="#" class="social__link" title="Мы в Instagram">
               <img src="img/icons/instagram-icon.svg" class="social__icon" alt="Instagram" width="16" height="16">
             </a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link">
-              Мы в Facebook
+            <a href="#" class="social__link" title="Мы в Facebook">
               <img src="img/icons/facebook-icon.svg" class="social__icon" alt="Facebook" width="22" height="22">
             </a>
           </li>
