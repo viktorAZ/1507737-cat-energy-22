@@ -8,45 +8,44 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo site-logo">
-      <img src="img/main-logo-mini.svg" class="site-logo__img" alt="Логотип сайта Cat Energy" width="33" height="37">
-      <img src="img/main-logo-text.svg" class="site-logo__text" alt="Логотип сайта Cat Energy" width="101" height="18">
-    </a>
+    <div class="page-header__wrapper container">
+      <a class="page-header__logo site-logo">
+        <img src="img/main-logo-mini.svg" class="site-logo__img" alt="Логотип сайта Cat Energy" width="33" height="37">
+        <img src="img/main-logo-text.svg" class="site-logo__text" alt="Логотип сайта Cat Energy" width="101"
+          height="18">
+      </a>
 
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="main-nav__wrapper container">
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="main-nav__list menu-list">
           <li class="menu-list__item">
-            <a href="#" class="menu-list__link menu-list__link--current">главная</a>
+            <a href="index.html" class="menu-list__link menu-list__link--current">главная</a>
           </li>
           <li class="menu-list__item">
-            <a href="#" class="menu-list__link">каталог продукции</a>
+            <a href="catalog.html" class="menu-list__link">каталог продукции</a>
           </li>
           <li class="menu-list__item">
-            <a href="#" class="menu-list__link">подбор программы</a>
+            <a class="menu-list__link">подбор программы</a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 
   <main class="page-main">
-    <h1 class="vissualy-hidden">Cat Energy - интернет магазин правильного питания для котов</h1>
-    <section class="promo-info">
-      <div class="promo-info__wrapper container">
+    <div class="container">
+      <h1 class="vissualy-hidden">Cat Energy - интернет магазин правильного питания для котов</h1>
+      <section class="promo-info">
         <h2 class="promo-info__title">Функциональное питание для котов</h2>
         <p class="promo-info__text">Занялся собой? Займись котом!</p>
         <a href="#" class="promo-info__button button">подобрать программу</a>
         <img src="img/promo-product.png" alt="Cat Energy Pro с курицей" width="280" height="270">
-      </div>
-    </section>
+      </section>
 
-    <section class="program">
-      <h2 class="visually-hidden">Список программ тренировок</h2>
-      <div class="program__wrapper container">
+      <section class="program">
+        <h2 class="visually-hidden">Список программ тренировок</h2>
         <ul class="program__list">
           <li class="program__item program__item--slim">
             <img src="img/icons/slim-icon.svg" class="program__img" alt="Похудение" width="50" height="53">
@@ -67,11 +66,9 @@
             <a href="#" class="program__link">каталог pro</a>
           </li>
         </ul>
-      </div>
-    </section>
+      </section>
 
-    <section class="features">
-      <div class="features__wrapper container">
+      <section class="features">
         <h2 class="features__title">Как это работает</h2>
         <ol class="features__list">
           <li class="features__item features__item--natural">
@@ -96,11 +93,9 @@
             </p>
           </li>
         </ol>
-      </div>
-    </section>
+      </section>
 
-    <section class="presentation">
-      <div class="presentation__wrapper container">
+      <section class="presentation">
         <h2 class="presentation__title">Живой пример</h2>
         <div class="presentation__info-block">
           <p class="presentation__text">
@@ -139,12 +134,10 @@
             <span class="cat-slider__after">стало</span>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="location">
-      <h2 class="visually-hidden">Как нас найти</h2>
-      <div class="location__wrapper container">
+      <section class="location">
+        <h2 class="visually-hidden">Как нас найти</h2>
         <div class="location__info-block">
           <p class="location__invite">приглашаем к сотрудничеству дилеров!</p>
           <div class="location__address">
@@ -155,8 +148,8 @@
             <img src="img/location-map.png" alt="Карта с адресом нашего офиса" width="320" height="362">
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper container">
@@ -164,27 +157,25 @@
         <img src="img/main-logo-text.svg" class="site-logo__text" alt="Логотип сайта Cat Energy" width="101"
           height="18">
       </a>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a href="#" class="social__link" title="Мы в VK">
-              <img src="img/icons/vk-icon.svg" class="social__icon" alt="VK" width="23" height="16">
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link" title="Мы в Instagram">
-              <img src="img/icons/instagram-icon.svg" class="social__icon" alt="Instagram" width="16" height="16">
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link" title="Мы в Facebook">
-              <img src="img/icons/facebook-icon.svg" class="social__icon" alt="Facebook" width="22" height="22">
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a href="#" class="social__link" title="Мы в VK">
+            <img src="img/icons/vk-icon.svg" class="social__icon" alt="VK" width="23" height="16">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link" title="Мы в Instagram">
+            <img src="img/icons/instagram-icon.svg" class="social__icon" alt="Instagram" width="16" height="16">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link" title="Мы в Facebook">
+            <img src="img/icons/facebook-icon.svg" class="social__icon" alt="Facebook" width="22" height="22">
+          </a>
+        </li>
+      </ul>
       <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
-        <p class="copyright__link">HTML Academy</p>
+        <p class="copyright__text">HTML Academy</p>
         <img src="img/htmlacademy.svg" class="copyright__logo" alt="HTMLAcademy" width="27" height="34">
       </a>
     </div>
