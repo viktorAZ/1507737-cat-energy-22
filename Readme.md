@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Viktor Zdorovcew](https://up.htmlacademy.ru/adaptive/22/user/1507737).
-* Наставник: [Евгений Петров](https://htmlacademy.ru/profile/id617077).
+* Наставник: [Юрий Белобородов](https://htmlacademy.ru/profile/id514591).
 
 ---
 
