@@ -34,9 +34,9 @@
   </header>
 
   <main class="page-main">
-    <div class="container">
-      <h1 class="page-main__title">Каталог продукции</h1>
-      <section class="product-catalog">
+    <h1 class="page-main__title">Каталог продукции</h1>
+    <section class="product-catalog">
+      <div class="product-catalog__wrapper container">
         <h2 class="visually-hidden">Список товаров</h2>
         <ul class="product-catalog__list">
           <li class="product-catalog__item cat-food">
@@ -179,51 +179,47 @@
             <button class="show-more__button button" type="button">показать все</button>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <section class="extra-products">
+    <section class="extra-products">
+      <div class="extra-products__wrapper container">
         <h2 class="extra-products">Дополнительные товары</h2>
-        <table class="extra-products__table optional-items">
-          <tr class="optional-items__row">
-            <th>Сахарозаменитель</th>
-            <td>1 упаковка (100 г)</td>
-            <td>200 Р.</td>
-            <td>
-              <a href="#" class="optional-items__button button">заказать</a>
-              </td>
-          </tr>
-          <tr class="optional-items__row">
-            <th>Питьевая вода</th>
-            <td>5 литров</td>
-            <td>50 Р.</td>
-            <td>
-              <a href="#" class="optional-items__button button">заказать</a>
-              </td>
-          </tr>
-          <tr class="optional-items__row">
-            <th>молоко</th>
-            <td>1 литр</td>
-            <td>100 Р.</td>
-            <td>
-              <a href="#" class="optional-items__button button">заказать</a>
-              </td>
-          </tr>
-          <tr class="optional-items__row">
-            <th>витамины</th>
-            <td>1 упаковка (30 г)</td>
-            <td>300 Р.</td>
-            <td>
-              <a href="#" class="optional-items__button button">заказать</a>
-              </td>
-          </tr>
-        </table>
+        <ul class="extra-products__list optional-items">
+          <li class="optional-items__item">
+            <h3 class="optional-items__name">Сахарозаменитель</h3>
+            <p class="optional-items__amount">1 упаковка (100 г)</p>
+            <p class="optional-items__price">200 Р.</p>
+            <a href="#" class="optional-items__button button">заказать</a>
+          </li>
+          <li class="optional-items__item">
+            <h3 class="optional-items__name">Питьевая вода</h3>
+            <p class="optional-items__amount">5 литров</p>
+            <p class="optional-items__price">50 Р.</p>
+            <a href="#" class="optional-items__button button">заказать</a>
+          </li>
+          <li class="optional-items__item">
+            <h3 class="optional-items__name">молоко</h3>
+            <p class="optional-items__amount">1 литр</p>
+            <p class="optional-items__price">100 Р.</p>
+            <a href="#" class="optional-items__button button">заказать</a>
+          </li>
+          <li class="optional-items__item">
+            <h3 class="optional-items__name">витамины</h3>
+            <p class="optional-items__amount">1 упаковка (30 г)</p>
+            <p class="optional-items__price">300 Р.</p>
+            <a href="#" class="optional-items__button button">заказать</a>
+          </li>
+        </ul>
         <div class="extra-products__banner gift-promo">
           <img src="img/icons/gift-icon.svg" class="gift-promo__icon" alt="Коробка с подарком">
           <p class="gift-promo__text">Закажите все и получите чехол для кота в подарок!</p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="location">
+    <section class="location">
+      <div class="location__wrapper container">
         <h2 class="visually-hidden">Как нас найти</h2>
         <div class="location__info-block">
           <p class="location__invite">приглашаем к сотрудничеству дилеров!</p>
@@ -235,8 +231,8 @@
             <img src="img/location-map.png" alt="Карта с адресом нашего офиса" width="320" height="362">
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper container">
