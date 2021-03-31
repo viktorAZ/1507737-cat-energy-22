@@ -1,0 +1,21 @@
+.menu-list {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  list-style: none;
+}
+
+.menu-list__item {
+  padding: 22px 0 23px;
+  border-top: 1px solid #e6e6e6;
+  cursor: pointer;
+}
+
+.menu-list__item:last-child {
+  border-bottom: 1px solid #e6e6e6;
+}
