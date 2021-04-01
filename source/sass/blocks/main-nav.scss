@@ -1,0 +1,30 @@
+.main-nav {
+  margin: 0 -20px;
+  border-top: 1px solid $burger-border-color;
+}
+
+.main-nav__list {
+  display: none;
+
+  @include reset-list-style();
+
+  .main-nav--no-js &,
+  .main-nav--show & {
+    display: block;
+  }
+}
+
+.main-nav__item {
+  border-bottom: 1px solid $burger-border-color;
+}
+
+.main-nav__link {
+  display: block;
+  font-family: $oswald-font;
+  padding: 22px 0 23px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}

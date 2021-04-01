@@ -1,0 +1,22 @@
+.location__info-block {
+  padding: 28px 0 26px;
+}
+
+.location__invite {
+  margin: 0;
+  font-family: $oswald-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $location-text-color;
+}
+
+.location__address p {
+  margin: 0;
+  font-family: $arial-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $description-text-color;
+}

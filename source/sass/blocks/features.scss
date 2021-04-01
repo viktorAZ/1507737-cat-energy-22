@@ -1,0 +1,31 @@
+.features {
+  padding: 27px 0 42px;
+}
+
+.features__title {
+  margin: 0 0 38px;
+  font-family: $oswald-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $basic-dark;
+}
+
+.features__list {
+  @include reset-list-style();
+}
+
+.features__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.features__description {
+  margin: 0;
+  font-family: $arial-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}

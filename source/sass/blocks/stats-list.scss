@@ -1,0 +1,20 @@
+.stats-list {
+  @include reset-list-style();
+}
+
+.stats-list__features {
+  font-family: $arial-font;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: $description-text-color;
+}
+
+.stats-list__value {
+  font-family: $oswald-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $basic-dark;
+  text-transform: uppercase;
+}

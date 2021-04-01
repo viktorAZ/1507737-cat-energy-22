@@ -1,0 +1,35 @@
+.promo-info {
+  background-color: $basic-white;
+}
+
+.promo-info__wrapper {
+  padding-top: 27px;
+  background: url("../../img/promo-bg.jpg") 50% 0 no-repeat,
+    linear-gradient(to top, #ffffff 97px, transparent 97px),
+    linear-gradient(to top, #ffffff 197px, #61a63c 197px);
+}
+
+.promo-info__title {
+  margin: 0 0 25px;
+  font-family: $oswald-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: $basic-white;
+}
+
+.promo-info__text {
+  margin: 0 0 29px;
+  font-family: $oswald-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic-white;
+}
+
+.promo-info__button {
+  padding: 8px 44px;
+}

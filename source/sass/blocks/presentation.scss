@@ -1,0 +1,33 @@
+.presentation {
+  padding: 27px 0 31px;
+  background-color: $section-bg-color;
+}
+
+.presentation__title {
+  margin: 0 0 33px;
+  font-family: $oswald-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $basic-dark;
+}
+
+.presentation__text {
+  margin: 0;
+  font-family: $arial-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $description-text-color;
+}
+
+.presentation__count {
+  font-family: $oswald-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $basic-dark;
+  text-align: center;
+  text-transform: uppercase;
+}
