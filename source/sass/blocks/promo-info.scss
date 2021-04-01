@@ -4,7 +4,9 @@
 
 .promo-info__wrapper {
   padding-top: 27px;
-  background: url("../../img/promo-bg.jpg") 0 0 no-repeat;
+  background: url("../../img/promo-bg.jpg") 50% 0 no-repeat,
+    linear-gradient(to top, #ffffff 97px, transparent 97px),
+    linear-gradient(to top, #ffffff 197px, #61a63c 197px);
 }
 
 .promo-info__title {
