@@ -1,0 +1,11 @@
+.button {
+  font: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $basic-white;
+  text-align: center;
+  background-color: $main-color;
+  border: none;
+  cursor: pointer;
+}

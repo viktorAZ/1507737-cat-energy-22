@@ -1,0 +1,14 @@
+.cat-slider__list {
+  @include reset-list-style();
+}
+
+.cat-slider__before,
+.cat-slider__after {
+  font-family: $oswald-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic-dark;
+}

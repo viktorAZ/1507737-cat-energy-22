@@ -1,0 +1,22 @@
+.toggle {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  width: 30px;
+  height: 30px;
+  padding: 15px;
+  padding-right: 20px;
+  background: 0 0;
+  border: 0;
+  user-select: none;
+  margin: 0;
+  border-radius: 0;
+  font-size: 0;
+  line-height: 0;
+  outline: none;
+  cursor: pointer;
+}

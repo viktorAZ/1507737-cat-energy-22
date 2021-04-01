@@ -3,11 +3,11 @@
 }
 
 .page__body {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald-font;
   margin: 0;
   padding: 0;
   color: $basic-dark;
   background-color: $basic-white;
   min-height: 100%;
-  min-width: 960px;
+  min-width: 320px;
 }
