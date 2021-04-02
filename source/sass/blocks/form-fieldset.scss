@@ -1,37 +1,40 @@
 .form-fieldset {
   padding: 0;
   margin: 0;
+  font-family: $oswald-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
   border: none;
-}
 
-.form-fieldset--cat-info {
-  margin: 0 -20px;
-  padding: 39px 20px 24px;
-  border-bottom: 1px solid $fieldset-border-color;
-}
+  &--cat-info {
+    margin: 0 -20px;
+    padding: 39px 20px 24px;
+    border-bottom: 1px solid $fieldset-border-color;
+  }
 
-.form-fieldset--choose-program {
-  margin: 0 -20px;
-  padding: 22px 20px 19px;
-  border-bottom: 1px solid $fieldset-border-color;
-}
+  &--choose-program {
+    margin: 0 -20px;
+    padding: 22px 20px 19px;
+    border-bottom: 1px solid $fieldset-border-color;
+  }
 
-.form-fieldset--contacts {
-  padding: 26px 0 23px;
-}
+  &--contacts {
+    padding: 26px 0 23px;
+  }
 
-.form-fieldset--comment {
-  padding: 0 0 23px;
-}
+  &--comment {
+    padding: 0 0 23px;
+  }
 
-.form-fieldset--optional {
-  padding: 0 0 34px;
+  &--optional {
+    padding: 0 0 34px;
+  }
 }
 
 .form-fieldset__title {
   margin: 0;
-  font-family: $oswald-font;
-  font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   color: $basic-dark;
@@ -41,30 +44,14 @@
   @include reset-list-style();
 }
 
-.form-fieldset__input-label {
-  font-family: $oswald-font;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: $input-label-color;
-}
-
+.form-fieldset__input-label,
 .form-fieldset__input {
-  font-family: $oswald-font;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
+  font: inherit;
   text-transform: uppercase;
   color: $input-label-color;
 }
 
 .form-fieldset__radio-label,
 .form-fieldset__checkbox-label {
-  font-family: $oswald-font;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
   color: $radio-label-color;
 }

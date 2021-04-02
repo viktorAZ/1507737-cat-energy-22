@@ -1,24 +1,22 @@
 .select-program {
   padding: 27px 0 0;
+  font-family: $oswald-font;
+  font-weight: 400;
+  color: $basic-dark;
 }
 
 .select-program__title {
   margin: 0 0 37px;
-  font-family: $oswald-font;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  color: $basic-dark;
 }
 
 .select-program__description {
   margin: 0;
-  font-family: $oswald-font;
-  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  color: $basic-dark;
 }
 
 .select-program__submit-block {
@@ -31,8 +29,6 @@
 .select-program__button {
   padding: 14px 44px;
   width: 280px;
-  font-family: $oswald-font;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -41,9 +37,6 @@
 
 .select-program__notation {
   font-family: $arial-font;
-  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  text-align: center;
-  color: $basic-dark;
 }
