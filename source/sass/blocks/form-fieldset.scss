@@ -1,0 +1,57 @@
+.form-fieldset {
+  padding: 0;
+  margin: 0;
+  font-family: $oswald-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: none;
+
+  &--cat-info {
+    margin: 0 -20px;
+    padding: 39px 20px 24px;
+    border-bottom: 1px solid $fieldset-border-color;
+  }
+
+  &--choose-program {
+    margin: 0 -20px;
+    padding: 22px 20px 19px;
+    border-bottom: 1px solid $fieldset-border-color;
+  }
+
+  &--contacts {
+    padding: 26px 0 23px;
+  }
+
+  &--comment {
+    padding: 0 0 23px;
+  }
+
+  &--optional {
+    padding: 0 0 34px;
+  }
+}
+
+.form-fieldset__title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 26px;
+  color: $basic-dark;
+}
+
+.form-fieldset__list {
+  @include reset-list-style();
+}
+
+.form-fieldset__input-label,
+.form-fieldset__input {
+  font: inherit;
+  text-transform: uppercase;
+  color: $input-label-color;
+}
+
+.form-fieldset__radio-label,
+.form-fieldset__checkbox-label {
+  color: $radio-label-color;
+}
