@@ -1,5 +1,8 @@
-.location--form-page {
-  background-color: $location-bg-color;
+.location {
+  &--form-page,
+  &--catalog-page {
+    background-color: $location-bg-color;
+  }
 }
 
 .location__info-block {

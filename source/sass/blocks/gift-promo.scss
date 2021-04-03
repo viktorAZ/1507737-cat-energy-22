@@ -1,0 +1,27 @@
+.gift-promo {
+  padding: 35px 0 39px;
+}
+
+.gift-promo__banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 43px 50px;
+  min-height: 289px;
+  font-family: $arial-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-white;
+  background: url("../../img/gift-photo-mobile1.jpg") center center/cover no-repeat, $main-color;
+}
+
+.gift-promo__icon {
+  margin-bottom: 48px;
+}
+
+.gift-promo__text {
+  margin: 0;
+  text-align: center;
+}
