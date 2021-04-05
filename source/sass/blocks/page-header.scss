@@ -1,6 +1,14 @@
 .page-header {
   position: relative;
 
+  &--index {
+    @media #{$desktop} {
+      .main-nav__link {
+        color: $basic-white;
+      }
+    }
+  }
+
   @media #{$desktop} {
     &--bg {
       &::before {

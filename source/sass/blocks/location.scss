@@ -1,9 +1,20 @@
 .location {
   position: relative;
 
-  &--form-page,
-  &--catalog-page {
+  &--gray {
     background-color: $location-bg-color;
+
+    .location__info-block {
+      background-color: $location-bg-color;
+
+      @media #{$desktop} {
+        background-color: $basic-white;
+      }
+    }
+
+    @media #{$desktop} {
+      background-color: $basic-white;
+    }
   }
 }
 
