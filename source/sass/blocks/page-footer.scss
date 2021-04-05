@@ -1,9 +1,35 @@
 .page-footer {
   padding: 39px 0 22px;
   background-color: $footer-bg-color;
+
+  @media #{$tablet} {
+    padding: 55px 0 61px;
+  }
+
+  @media #{$desktop} {
+    padding: 57px 0 58px;
+  }
+}
+
+.page-footer__wrapper {
+  @media #{$tablet} {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__logo {
-  display: block;
-  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 32px;
+
+  img {
+    display: block;
+  }
+
+  @media #{$tablet} {
+    padding-bottom: 0;
+  }
 }

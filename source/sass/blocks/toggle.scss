@@ -19,4 +19,8 @@
   line-height: 0;
   outline: none;
   cursor: pointer;
+
+  @media #{$tablet} {
+    display: none;
+  }
 }

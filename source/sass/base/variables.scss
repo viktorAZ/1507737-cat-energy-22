@@ -9,6 +9,7 @@ $basic-white: #ffffff;
 $basic-dark: #000000;
 $main-color: #68b738;
 $secondary-color: #5eaa2f;
+$promo-bg-color: #61a63c;
 $burger-border-color: #e6e6e6;
 $program-item-bg-color: #f2f2f2;
 $description-text-color: #444444;
@@ -26,3 +27,10 @@ $cat-product-title-color: #222222;
 $cat-product-more-color: #111111;
 $cat-product-text-color: #444444;
 $optional-name-color: #222222;
+$presentation-bg-color: #eaeaea;
+
+// Viewports
+
+$desktop: (min-width: 1440px);
+$tablet: (min-width: 768px);
+$mobile: (max-width: 320px);

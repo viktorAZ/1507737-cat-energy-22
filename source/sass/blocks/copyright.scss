@@ -1,3 +1,14 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 22px;
+
+  @media #{$tablet} {
+    padding-top: 0;
+  }
+}
+
 .copyright__text {
   margin: 0;
   font-family: $arial-font;

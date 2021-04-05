@@ -1,35 +1,105 @@
 .promo-info {
-  background-color: $basic-white;
+  background-image:
+    linear-gradient(to top, $basic-white 97px, transparent 97px),
+    url("../../img/promo-bg.jpg"),
+    linear-gradient(to top, $basic-white 197px, $promo-bg-color 197px);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: $promo-bg-color;
+  background-size: 100%;
+
+  @media #{$tablet} {
+    background: none;
+  }
+
+  @media #{$desktop} {
+    padding-bottom: 185px;
+  }
 }
 
 .promo-info__wrapper {
   padding-top: 27px;
-  background: url("../../img/promo-bg.jpg") 50% 0 no-repeat,
-    linear-gradient(to top, #ffffff 97px, transparent 97px),
-    linear-gradient(to top, #ffffff 197px, #61a63c 197px);
+  font-family: $oswald-font;
+  text-align: center;
+  color: $basic-white;
+
+  @media #{$tablet} {
+    padding: 50px 0 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  @media #{$desktop} {
+    padding: 50px 10px 20px;
+  }
 }
 
 .promo-info__title {
   margin: 0 0 25px;
-  font-family: $oswald-font;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  text-align: center;
-  color: $basic-white;
+
+  @media #{$tablet} {
+    max-width: 414px;
+    font-size: 60px;
+    line-height: 60px;
+    color: $basic-dark;
+  }
 }
 
 .promo-info__text {
   margin: 0 0 29px;
-  font-family: $oswald-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-  text-align: center;
   text-transform: uppercase;
-  color: $basic-white;
+
+  @media #{$tablet} {
+    margin-bottom: 49px;
+    font-size: 20px;
+    line-height: 20px;
+    color: $basic-dark;
+  }
+}
+
+.promo-info__img {
+  display: block;
+  margin: 0 auto;
+
+  @media #{$tablet} {
+    width: 709px;
+    height: 609px;
+    order: 4;
+  }
+
+  @media #{$desktop} {
+    position: absolute;
+    top: 123px;
+    left: 770px;
+    width: 552px;
+    height: 499px;
+  }
 }
 
 .promo-info__button {
   padding: 8px 44px;
+
+  @media #{$tablet} {
+    padding: 14px 26px;
+    margin-bottom: -80px;
+    max-width: 244px;
+    z-index: 2;
+  }
+
+  @media #{$desktop} {
+    margin-bottom: 0;
+  }
+}
+
+.promo-info__content {
+  @media #{$tablet} {
+    margin-left: 100px;
+  }
 }
