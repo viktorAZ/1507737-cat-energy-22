@@ -1,6 +1,11 @@
 .main-nav {
   margin: 0 -20px;
   border-top: 1px solid $burger-border-color;
+
+  @media #{$tablet} {
+    border-top: none;
+    margin: 0 -18px;
+  }
 }
 
 .main-nav__list {
@@ -11,20 +16,45 @@
   .main-nav--no-js &,
   .main-nav--show & {
     display: block;
+
+    @media #{$tablet} {
+      display: flex;
+    }
+  }
+
+  @media #{$tablet} {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media #{$desktop} {
+    justify-content: flex-end;
   }
 }
 
 .main-nav__item {
   border-bottom: 1px solid $burger-border-color;
+
+  @media #{$tablet} {
+    border-bottom: none;
+  }
 }
 
 .main-nav__link {
   display: block;
   font-family: $oswald-font;
-  padding: 22px 0 23px;
-  font-weight: 500;
+  padding: 20px;
+  font-weight: 400;
   font-size: 20px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+
+  @media #{$tablet} {
+    border-bottom: none;
+  }
+
+  @media #{$desktop} {
+    color: $basic-white;
+  }
 }

@@ -10,7 +10,7 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header">
+  <header class="page-header page-header--bg">
     <div class="page-header__wrapper container">
       <a class="page-header__logo">
         <img src="img/main-logo-mini.svg" alt="Логотип сайта Cat Energy" width="33" height="37">
@@ -37,10 +37,11 @@
 
     <section class="promo-info">
       <div class="promo-info__wrapper container">
-        <h2 class="promo-info__title">Функциональное питание для котов</h2>
-        <p class="promo-info__text">Занялся собой? Займись котом!</p>
-        <img src="img/promo-product.png" alt="Cat Energy Pro с курицей" width="280" height="270">
-        <a href="form.html" class="promo-info__button button">подобрать программу</a>
+        <h2 class="promo-info__content promo-info__title">Функциональное питание для котов</h2>
+        <p class="promo-info__content promo-info__text">Занялся собой? Займись котом!</p>
+        <img class="promo-info__img" src="img/promo-product.png" alt="Cat Energy Pro с курицей" width="280"
+          height="270">
+        <a href="form.html" class="promo-info__content promo-info__button button">подобрать программу</a>
       </div>
     </section>
   </header>
@@ -78,17 +79,29 @@
         <h2 class="features__title">Как это работает</h2>
         <ol class="features__list">
           <li class="features__item features__item--natural">
+            <div class="features__icon-block">
+              <img src="img/icons/icon_leaf.svg" alt="tempAlt">
+            </div>
             <p class="features__description">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
           <li class="features__item features__item--powder">
+            <div class="features__icon-block">
+              <img src="img/icons/icon_tub.svg" alt="tempAlt">
+            </div>
             <p class="features__description">Выпускается в&nbsp;виде порошка, который нужно лишь залить кипятком
               и&nbsp;готово.</p>
           </li>
           <li class="features__item features__item--eat">
+            <div class="features__icon-block">
+              <img src="img/icons/icon_eat.svg" alt="tempAlt">
+            </div>
             <p class="features__description">Замените один-два приема обычной еды на&nbsp;наше функциональное питание.
             </p>
           </li>
           <li class="features__item features__item--time">
+            <div class="features__icon-block">
+              <img src="img/icons/icon_alarm.svg" alt="tempAlt">
+            </div>
             <p class="features__description">Уже через месяц наслаждайтесь изменениями к&nbsp;лучшему вашего питомца!
             </p>
           </li>
@@ -137,7 +150,6 @@
           </div>
         </div>
       </div>
-      </div>
     </section>
 
     <section class="location">
@@ -152,14 +164,14 @@
         </div>
       </div>
       <div class="location__map">
-        <img src="img/location-map.png" alt="Карта с адресом нашего офиса" width="320" height="362">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CCUUyFCUOC" width="320" height="362"></iframe>
       </div>
     </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper container">
       <a class="page-footer__logo">
-        <img src="img/main-logo-text.svg" alt="Логотип сайта Cat Energy" width="101" height="18">
+        <img src="img/main-logo-text.svg" alt="Логотип сайта Cat Energy" width="126" height="24">
       </a>
       <ul class="page-footer__social social">
         <li class="social__item">

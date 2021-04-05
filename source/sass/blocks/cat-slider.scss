@@ -3,15 +3,42 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media #{$desktop} {
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+  }
 }
 
 .cat-slider__list {
   @include reset-list-style();
 }
 
+.cat-slider__img {
+  &--after {
+    display: none;
+  }
+
+  @media #{$tablet} {
+    width: 708px;
+  }
+
+  @media #{$desktop} {
+    width: 690px;
+  }
+}
+
 .cat-slider__control {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.cat-slider__input {
+  @media #{$tablet} {
+    margin: 0 11px 0 14px;
+    width: 428px;
+  }
 }
 
 .cat-slider__before,
@@ -23,4 +50,9 @@
   text-align: center;
   text-transform: uppercase;
   color: $basic-dark;
+
+  @media #{$tablet} {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

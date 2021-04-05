@@ -1,4 +1,6 @@
 .location {
+  position: relative;
+
   &--form-page,
   &--catalog-page {
     background-color: $location-bg-color;
@@ -7,6 +9,25 @@
 
 .location__info-block {
   padding: 28px 0 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $basic-white;
+
+  @media #{$tablet} {
+    padding: 62px 41px 51px;
+  }
+
+  @media #{$desktop} {
+    padding: 62px 89px 51px 76px;
+    width: 570px;
+    margin-left: 110px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
 }
 
 .location__invite {
@@ -17,13 +38,49 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $location-text-color;
+
+  @media #{$tablet} {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
-.location__address p {
-  margin: 0;
+.location__address {
   font-family: $arial-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: $description-text-color;
+
+  @media #{$tablet} {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+  }
+
+  @media #{$desktop} {
+    text-align: start;
+  }
+
+  p {
+    margin: 0;
+
+    &:not(:last-child) {
+      @media #{$tablet} {
+        margin-bottom: 17px;
+      }
+    }
+  }
+}
+
+.location__map {
+  iframe {
+    display: block;
+    width: 100%;
+    border: none;
+
+    @media #{$tablet} {
+      height: 400px;
+    }
+  }
 }

@@ -4,26 +4,55 @@
 
 .program__list {
   @include reset-list-style();
+
+  @media #{$desktop} {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .program__item {
   padding: 18px 20px;
+  font-family: $oswald-font;
   background-color: $program-item-bg-color;
 
   &:not(:last-child) {
     margin-bottom: 20px;
+
+    @media #{$tablet} {
+      margin-bottom: 30px;
+    }
+
+    @media #{$desktop} {
+      margin-right: 80px;
+    }
+  }
+
+  @media #{$tablet} {
+    padding: 77px 62px 53px 53px;
+    min-height: 372px;
+  }
+
+  @media #{$desktop} {
+    width: 100%;
+    margin-bottom: 30px;
   }
 }
 
 .program__title {
   margin: 0;
-  font-family: $oswald-font;
-  font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   color: $basic-dark;
+
+  @media #{$tablet} {
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .program__description {
@@ -33,15 +62,25 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $description-text-color;
+
+  @media #{$tablet} {
+    max-width: 377px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $basic-dark;
+  }
 }
 
 .program__link {
-  font-family: $oswald-font;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  color: #000000;
+  color: $basic-dark;
+
+  @media #{$tablet} {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
