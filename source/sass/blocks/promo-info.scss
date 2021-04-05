@@ -18,6 +18,7 @@
 }
 
 .promo-info__wrapper {
+  position: relative;
   padding-top: 27px;
   font-family: $oswald-font;
   text-align: center;
@@ -76,8 +77,8 @@
 
   @media #{$desktop} {
     position: absolute;
-    top: 123px;
-    left: 770px;
+    top: 0;
+    left: 478px;
     width: 552px;
     height: 499px;
   }

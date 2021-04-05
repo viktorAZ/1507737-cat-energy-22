@@ -25,8 +25,8 @@ a {
   }
 
   @media #{$desktop} {
-    padding: 0 110px;
-    min-width: 1220px;
+    padding: 0;
+    max-width: 1220px;
   }
 }
 
