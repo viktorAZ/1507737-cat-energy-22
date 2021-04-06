@@ -12,7 +12,7 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper container">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img src="img/main-logo-mini.svg" alt="Логотип сайта Cat Energy" width="33" height="37">
         <img src="img/main-logo-text.svg" alt="Логотип сайта Cat Energy" width="101" height="18">
       </a>
@@ -39,11 +39,13 @@
   <main>
     <h1 class="visually-hidden">Cat Energy - интернет магазин правильного питания для котов</h1>
     <section class="select-program">
-      <div class="select-program__wrapper container">
+      <div class="container">
         <h2 class="select-program__title">Подбор программы</h2>
         <p class="select-program__description">Заполните анкету, и мы подберем <br> программу питания для вашего кота
         </p>
-        <form action="https://echo.htmlacademy.ru/" class="select-program__form" method="post">
+      </div>
+      <form action="https://echo.htmlacademy.ru/" class="select-program__form" method="post">
+        <div class="select-program__wrapper container">
           <fieldset class="form-fieldset form-fieldset--cat-info">
             <legend class="visually-hidden">Основная информация о питомце</legend>
             <ul class="form-fieldset__list">
@@ -83,65 +85,67 @@
               </li>
             </ul>
           </fieldset>
-      </div>
-      <fieldset class="form-fieldset form-fieldset--contacts">
-        <div class="container">
-          <legend class="form-fieldset__title">Контактные данные (владельца кота)</legend>
-          <ul class="form-fieldset__list">
-            <li class="form-fieldset__item">
-              <label class="form-fieldset__input-label" for="owner-email-input">E-mail:*</label>
-              <input class="form-fieldset__input" id="owner-email-input" name="owner-email" type="email"
-                value="kuklachev@gmail.com" required>
-            </li>
-            <li class="form-fieldset__item">
-              <label class="form-fieldset__input-label" for="owner-phone-input">Телефон:*</label>
-              <input class="form-fieldset__input" id="owner-phone-input" name="owner-phone" type="tel"
-                value="8 (960) 900-60-90" required>
-            </li>
-          </ul>
         </div>
-      </fieldset>
-      <fieldset class="form-fieldset form-fieldset--comment">
-        <div class="container">
-          <legend class="form-fieldset__title">Комментарий</legend>
-          <label>
-            <textarea class="form-fieldset__input" id="owner-comment-input" name="owner-comment" cols="30"
-              rows="10">Расскажите обо всех повадках кота</textarea>
-          </label>
+        <fieldset class="form-fieldset form-fieldset--contacts">
+          <div class="container">
+            <legend class="form-fieldset__title">Контактные данные (владельца кота)</legend>
+            <ul class="form-fieldset__list">
+              <li class="form-fieldset__item">
+                <label class="form-fieldset__input-label" for="owner-email-input">E-mail:*</label>
+                <input class="form-fieldset__input" id="owner-email-input" name="owner-email" type="email"
+                  value="kuklachev@gmail.com" required>
+              </li>
+              <li class="form-fieldset__item">
+                <label class="form-fieldset__input-label" for="owner-phone-input">Телефон:*</label>
+                <input class="form-fieldset__input" id="owner-phone-input" name="owner-phone" type="tel"
+                  value="8 (960) 900-60-90" required>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset class="form-fieldset form-fieldset--comment">
+          <div class="container">
+            <legend class="form-fieldset__title">Комментарий</legend>
+            <label>
+              <textarea class="form-fieldset__input" id="owner-comment-input" name="owner-comment" cols="30"
+                rows="10">Расскажите обо всех повадках кота</textarea>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="form-fieldset form-fieldset--optional">
+          <div class="container">
+            <legend class="form-fieldset__title">Дополнительно</legend>
+            <ul class="form-fieldset__list">
+              <li class="form-fieldset__item">
+                <label class="form-fieldset__checkbox-label" for="add-sweetener-checkbox">сахарозаменитель</label>
+                <input class="form-fieldset__checkbox" id="add-sweetener-checkbox" name="add-sweetener" type="checkbox"
+                  checked>
+              </li>
+              <li class="form-fieldset__item">
+                <label class="form-fieldset__checkbox-label" for="add-water-checkbox">питьевая вода</label>
+                <input class="form-fieldset__checkbox" id="add-water-checkbox" name="add-water" type="checkbox">
+              </li>
+              <li class="form-fieldset__item">
+                <label class="form-fieldset__checkbox-label" for="add-milk-checkbox">молоко</label>
+                <input class="form-fieldset__checkbox" id="add-milk-checkbox" name="add-milk" type="checkbox">
+              </li>
+              <li class="form-fieldset__item">
+                <label class="form-fieldset__checkbox-label" for="add-vitamin-checkbox">витамины</label>
+                <input class="form-fieldset__checkbox" id="add-vitamin-checkbox" name="add-vitamin" type="checkbox">
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <div class="select-program__submit-block">
+          <div class="container">
+            <button class="select-program__button button" type="submit">отправить заявку</button>
+            <p class="select-program__notation">* — Обязательные поля</p>
+          </div>
         </div>
-      </fieldset>
-      <fieldset class="form-fieldset form-fieldset--optional">
-        <div class="container">
-          <legend class="form-fieldset__title">Дополнительно</legend>
-          <ul class="form-fieldset__list">
-            <li class="form-fieldset__item">
-              <label class="form-fieldset__checkbox-label" for="add-sweetener-checkbox">сахарозаменитель</label>
-              <input class="form-fieldset__checkbox" id="add-sweetener-checkbox" name="add-sweetener" type="checkbox"
-                checked>
-            </li>
-            <li class="form-fieldset__item">
-              <label class="form-fieldset__checkbox-label" for="add-water-checkbox">питьевая вода</label>
-              <input class="form-fieldset__checkbox" id="add-water-checkbox" name="add-water" type="checkbox">
-            </li>
-            <li class="form-fieldset__item">
-              <label class="form-fieldset__checkbox-label" for="add-milk-checkbox">молоко</label>
-              <input class="form-fieldset__checkbox" id="add-milk-checkbox" name="add-milk" type="checkbox">
-            </li>
-            <li class="form-fieldset__item">
-              <label class="form-fieldset__checkbox-label" for="add-vitamin-checkbox">витамины</label>
-              <input class="form-fieldset__checkbox" id="add-vitamin-checkbox" name="add-vitamin" type="checkbox">
-            </li>
-          </ul>
-        </div>
-      </fieldset>
-      <div class="select-program__submit-block">
-        <button class="select-program__button button" type="submit">отправить заявку</button>
-        <p class="select-program__notation">* — Обязательные поля</p>
-      </div>
       </form>
     </section>
 
-    <section class="location location--form-page">
+    <section class="location location--gray">
       <div class="location__wrapper container">
         <h2 class="visually-hidden">Как нас найти</h2>
         <div class="location__info-block">
@@ -153,15 +157,14 @@
         </div>
       </div>
       <div class="location__map">
-        <img src="img/location-map.png" alt="Карта с адресом нашего офиса" width="320" height="362">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CCUUyFCUOC" width="320" height="362"></iframe>
       </div>
     </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper container">
       <a class="page-footer__logo">
-        <img src="img/main-logo-text.svg" alt="Логотип сайта Cat Energy" width="101"
-          height="18">
+        <img src="img/main-logo-text.svg" alt="Логотип сайта Cat Energy" width="101" height="18">
       </a>
       <ul class="page-footer__social social">
         <li class="social__item">

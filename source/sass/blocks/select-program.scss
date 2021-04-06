@@ -3,6 +3,29 @@
   font-family: $oswald-font;
   font-weight: 400;
   color: $basic-dark;
+
+  > .container {
+    @media #{$tablet} {
+      padding: 0 67px 0 71px;
+    }
+
+    @media #{$desktop} {
+      padding: 0;
+    }
+  }
+}
+
+.select-program__wrapper {
+  @media #{$tablet} {
+    padding: 0 67px 0 71px;
+  }
+
+  @media #{$desktop} {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
 }
 
 .select-program__title {
@@ -10,6 +33,11 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+
+  @media #{$tablet} {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .select-program__description {
@@ -17,13 +45,29 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media #{$tablet} {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .select-program__submit-block {
-  padding: 0 20px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  .container {
+    padding: 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media #{$tablet} {
+      padding: 0 67px 0 71px;
+      flex-direction: row;
+    }
+
+    @media #{$desktop} {
+      padding: 0;
+    }
+  }
 }
 
 .select-program__button {
@@ -33,9 +77,18 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $basic-white;
+
+  @media #{$tablet} {
+    margin-right: 61px;
+  }
+
+  @media #{$desktop} {
+    width: 568px;
+  }
 }
 
 .select-program__notation {
+  margin: 0;
   font-family: $arial-font;
   font-size: 14px;
   line-height: 16px;
