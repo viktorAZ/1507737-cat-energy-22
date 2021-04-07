@@ -1,5 +1,9 @@
 .gift-promo {
   padding: 35px 0 39px;
+
+  @media #{$desktop} {
+    padding: 0;
+  }
 }
 
 .gift-promo__banner {
@@ -14,14 +18,38 @@
   font-size: 16px;
   line-height: 20px;
   color: $basic-white;
-  background: url("../../img/gift-photo-mobile1.jpg") center center/cover no-repeat, $main-color;
+  background: url("../img/gift-photo-mobile1.jpg") center center/cover no-repeat, $main-color;
+
+  @media #{$tablet} {
+    padding: 57px 124px 60px 78px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media #{$desktop} {
+    flex-direction: column;
+    padding: 56px 43px 42px 41px;
+    width: 245px;
+  }
 }
 
 .gift-promo__icon {
   margin-bottom: 48px;
+
+  @media #{$tablet} {
+    margin-bottom: 0;
+  }
 }
 
 .gift-promo__text {
   margin: 0;
   text-align: center;
+
+  @media #{$tablet} {
+    text-align: left;
+  }
+
+  @media #{$desktop} {
+    text-align: center;
+  }
 }
