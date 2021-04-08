@@ -2,6 +2,18 @@
   padding: 27px 0 0;
   font-family: $oswald-font;
   color: $basic-dark;
+
+  @media #{$desktop} {
+    padding-bottom: 86px;
+  }
+}
+
+.extra-products__wrapper {
+  @media #{$desktop} {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .extra-products__title {
@@ -9,4 +21,13 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+
+  @media #{$tablet} {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media #{$desktop} {
+    width: 100%;
+  }
 }
