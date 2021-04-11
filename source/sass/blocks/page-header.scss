@@ -1,14 +1,6 @@
 .page-header {
   position: relative;
 
-  &--index {
-    @media #{$desktop} {
-      .main-nav__link {
-        color: $basic-white;
-      }
-    }
-  }
-
   @media #{$desktop} {
     &--bg {
       &::before {
@@ -18,7 +10,7 @@
         bottom: 0;
         left: 50%;
         content: "";
-        background-image: url("../../img/index-bg-desktop.png");
+        background-image: url("../img/index-bg-desktop.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: right center;
@@ -30,22 +22,34 @@
 
 .page-header__wrapper {
   @media #{$tablet} {
-    padding: 20px 30px 20px;
+    padding: 40px 30px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   @media #{$desktop} {
-    padding: 50px 110px 20px;
+    padding: 69px 0 20px;
   }
 }
 
 .page-header__logo {
-  box-sizing: content-box;
   position: relative;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 8px 0 12px;
-  height: 45px;
+  max-width: 191px;
+
+  &[href]:hover {
+    opacity: 0.8;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+  }
+
+  @media #{$tablet} {
+    padding: 0;
+  }
 }

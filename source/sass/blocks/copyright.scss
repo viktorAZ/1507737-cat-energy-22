@@ -16,4 +16,8 @@
   font-size: 16px;
   line-height: 18px;
   color: $description-text-color;
+
+  &:active {
+    color: rgba($description-text-color, 0.3);
+  }
 }

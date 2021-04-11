@@ -9,4 +9,25 @@
   border: none;
   cursor: pointer;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+
+  &:active {
+    color: rgba($basic-white, 0.3);
+  }
+
+  &--gray {
+    color: $cat-product-text-color;
+    background-color: $more-button-color;
+
+    &:hover {
+      background-color: $btn-gray-hover-color;
+    }
+
+    &:active {
+      color: rgba($cat-product-text-color, 0.3);
+    }
+  }
 }

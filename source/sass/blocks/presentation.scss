@@ -17,7 +17,8 @@
   @media #{$desktop} {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: min-content 1fr;
+    row-gap: 145px;
   }
 }
 
@@ -32,11 +33,24 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media #{$desktop} {
+    margin: 0;
+  }
 }
 
 .presentation__info-block {
+  @media #{$tablet} {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
   @media #{$desktop} {
     grid-column: 1 / 2;
+    margin: 0;
+    flex-direction: column;
   }
 }
 
@@ -49,8 +63,13 @@
   color: $description-text-color;
 
   @media #{$tablet} {
+    margin-bottom: 54px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media #{$desktop} {
+    margin-bottom: 69px;
   }
 }
 
@@ -64,12 +83,28 @@
   text-transform: uppercase;
 
   @media #{$tablet} {
+    padding-top: 12px;
+    max-width: 180px;
     font-size: 20px;
     line-height: 20px;
     text-align: right;
   }
 
   @media #{$desktop} {
+    padding: 0;
+    max-width: 100%;
     text-align: left;
+  }
+}
+
+.presentation__price {
+  @media #{$tablet} {
+    margin-top: 8px;
+    display: block;
+  }
+
+  @media #{$desktop} {
+    margin: 0;
+    display: inline;
   }
 }

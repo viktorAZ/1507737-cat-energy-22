@@ -4,7 +4,7 @@ $oswald-font: "Oswald", "Arial", sans-serif;
 $arial-font: "Arial", sans-serif;
 
 // Colors
-
+// FIXME:
 $basic-white: #ffffff;
 $basic-dark: #000000;
 $main-color: #68b738;
@@ -32,9 +32,10 @@ $border-form-color: #e7e7e7;
 $fieldset-border-color: #68b738;
 $product-bg-color: #f2f2f2;
 $product-data-border-color: #cdcdcd;
+$btn-gray-hover-color: #ebebeb;
 
 // Viewports
 
 $desktop: (min-width: 1440px);
 $tablet: (min-width: 768px);
-$mobile: (max-width: 320px);
+$mobile-only: (max-width: 767px);

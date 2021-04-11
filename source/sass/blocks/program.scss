@@ -1,5 +1,9 @@
 .program {
   padding-top: 22px;
+
+  @media #{$desktop} {
+    padding-top: 82px;
+  }
 }
 
 .program__list {
@@ -8,14 +12,34 @@
   @media #{$desktop} {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
   }
 }
 
 .program__item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   padding: 18px 20px;
   font-family: $oswald-font;
   background-color: $program-item-bg-color;
+
+  @media #{$tablet} {
+    padding: 77px 62px 53px 53px;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    grid-template-rows: min-content 1fr min-content;
+    min-height: 372px;
+  }
+
+  @media #{$desktop} {
+    padding: 41px 51px 55px 52px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 570px;
+  }
 
   &:not(:last-child) {
     margin-bottom: 20px;
@@ -23,25 +47,26 @@
     @media #{$tablet} {
       margin-bottom: 30px;
     }
-
-    @media #{$desktop} {
-      margin-right: 80px;
-    }
   }
+}
 
+.program__img {
   @media #{$tablet} {
-    padding: 77px 62px 53px 53px;
-    min-height: 372px;
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+    width: 200px;
+    height: 211px;
   }
 
   @media #{$desktop} {
-    width: 100%;
-    margin-bottom: 30px;
+    margin-right: 55px;
+    width: 100px;
+    height: 106px;
   }
 }
 
 .program__title {
-  margin: 0;
+  margin: 0 0 0 19px;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
@@ -49,14 +74,21 @@
   color: $basic-dark;
 
   @media #{$tablet} {
-    margin-bottom: 24px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin: 0 0 24px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media #{$desktop} {
+    margin: 0;
   }
 }
 
 .program__description {
-  margin: 0;
+  margin: 0 0 23px;
+  padding-top: 22px;
   font-family: $arial-font;
   font-style: normal;
   font-weight: 400;
@@ -65,10 +97,33 @@
   color: $description-text-color;
 
   @media #{$tablet} {
+    grid-row: 2 / 3;
     max-width: 377px;
     font-size: 16px;
     line-height: 24px;
     color: $basic-dark;
+  }
+
+  @media #{$desktop} {
+    margin: 0;
+    padding: 39px 0 23px;
+    max-width: 100%;
+  }
+}
+
+.program__link-block {
+  @media #{$mobile-only} {
+    flex: 1;
+    padding-top: 18px;
+    border-top: 1px solid #d9d9d9;
+  }
+
+  @media #{$tablet} {
+    grid-row: 3 / 4;
+  }
+
+  @media #{$desktop} {
+    width: 100%;
   }
 }
 
@@ -78,6 +133,10 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $basic-dark;
+
+  &:active {
+    color: rgba($basic-dark, 0.3);
+  }
 
   @media #{$tablet} {
     font-size: 20px;
