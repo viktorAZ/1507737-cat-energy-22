@@ -1,7 +1,7 @@
 .promo-info {
   background-image:
     linear-gradient(to top, $basic-white 97px, transparent 97px),
-    url("../../img/promo-bg.jpg"),
+    url("../img/promo-bg.jpg"),
     linear-gradient(to top, $basic-white 197px, $promo-bg-color 197px);
   background-repeat: no-repeat;
   background-position: top;
@@ -99,6 +99,8 @@
 
   @media #{$desktop} {
     margin-bottom: 0;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
