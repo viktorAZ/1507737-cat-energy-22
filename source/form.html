@@ -69,19 +69,19 @@
             <legend class="visually-hidden">Выберите программу</legend>
             <ul class="form-fieldset__list">
               <li class="form-fieldset__item">
-                <label class="form-fieldset__radio-label" for="cat-slim-radio">похудение</label>
                 <input class="form-fieldset__radio" id="cat-slim-radio" name="cat-program" type="radio"
                   value="Похудение" checked>
+                <label class="form-fieldset__radio-label" for="cat-slim-radio">похудение</label>
               </li>
               <li class="form-fieldset__item">
-                <label class="form-fieldset__radio-label" for="cat-body-radio">Набор массы</label>
                 <input class="form-fieldset__radio" id="cat-body-radio" name="cat-program" type="radio"
                   value="Набор массы">
+                <label class="form-fieldset__radio-label" for="cat-body-radio">Набор массы</label>
               </li>
               <li class="form-fieldset__item">
-                <label class="form-fieldset__radio-label" for="cat-advice-radio">Не знаю (Нужен ваш совет)</label>
                 <input class="form-fieldset__radio" id="cat-advice-radio" name="cat-program" type="radio"
                   value="Не знаю (Нужен ваш совет)">
+                <label class="form-fieldset__radio-label" for="cat-advice-radio">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
@@ -106,10 +106,10 @@
         <fieldset class="form-fieldset form-fieldset--comment">
           <div class="container">
             <legend class="form-fieldset__title">Комментарий</legend>
-            <label>
-              <textarea class="form-fieldset__input" id="owner-comment-input" name="owner-comment" cols="30"
-                rows="10">Расскажите обо всех повадках кота</textarea>
-            </label>
+
+            <textarea class="form-fieldset__input" id="owner-comment-input" name="owner-comment" cols="30"
+              rows="10">Расскажите обо всех повадках кота</textarea>
+            </label class="visually-hidden" for="owner-comment-input"><label>
           </div>
         </fieldset>
         <fieldset class="form-fieldset form-fieldset--optional">
@@ -117,21 +117,21 @@
             <legend class="form-fieldset__title">Дополнительно</legend>
             <ul class="form-fieldset__list">
               <li class="form-fieldset__item">
-                <label class="form-fieldset__checkbox-label" for="add-sweetener-checkbox">сахарозаменитель</label>
                 <input class="form-fieldset__checkbox" id="add-sweetener-checkbox" name="add-sweetener" type="checkbox"
                   checked>
+                <label class="form-fieldset__checkbox-label" for="add-sweetener-checkbox">сахарозаменитель</label>
               </li>
               <li class="form-fieldset__item">
-                <label class="form-fieldset__checkbox-label" for="add-water-checkbox">питьевая вода</label>
                 <input class="form-fieldset__checkbox" id="add-water-checkbox" name="add-water" type="checkbox">
+                <label class="form-fieldset__checkbox-label" for="add-water-checkbox">питьевая вода</label>
               </li>
               <li class="form-fieldset__item">
-                <label class="form-fieldset__checkbox-label" for="add-milk-checkbox">молоко</label>
                 <input class="form-fieldset__checkbox" id="add-milk-checkbox" name="add-milk" type="checkbox">
+                <label class="form-fieldset__checkbox-label" for="add-milk-checkbox">молоко</label>
               </li>
               <li class="form-fieldset__item">
-                <label class="form-fieldset__checkbox-label" for="add-vitamin-checkbox">витамины</label>
                 <input class="form-fieldset__checkbox" id="add-vitamin-checkbox" name="add-vitamin" type="checkbox">
+                <label class="form-fieldset__checkbox-label" for="add-vitamin-checkbox">витамины</label>
               </li>
             </ul>
           </div>
