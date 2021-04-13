@@ -241,6 +241,7 @@
   min-height: 45px;
   width: 100%;
   border: 1px solid #e7e7e7;
+  cursor: text;
 
   &:hover {
     border: 1px solid #cdcdcd;
@@ -265,6 +266,7 @@
 .form-fieldset__radio-label,
 .form-fieldset__checkbox-label {
   color: $radio-label-color;
+  cursor: pointer;
 }
 
 .form-fieldset__radio-label {
@@ -277,8 +279,6 @@
 }
 
 .form-fieldset__radio {
-  display: none;
-
   & + label::before {
     content: "";
     position: absolute;
@@ -335,8 +335,6 @@
 }
 
 .form-fieldset__checkbox {
-  display: none;
-
   & + label::before {
     content: "";
     position: absolute;

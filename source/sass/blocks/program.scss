@@ -133,6 +133,7 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $basic-dark;
+  cursor: pointer;
 
   &:active {
     color: rgba($basic-dark, 0.3);
