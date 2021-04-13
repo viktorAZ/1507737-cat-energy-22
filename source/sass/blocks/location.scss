@@ -32,10 +32,8 @@
   @media #{$desktop} {
     padding: 62px 89px 51px 76px;
     width: 570px;
-    margin-left: 110px;
     position: absolute;
     top: 50%;
-    left: 0;
     transform: translateY(-50%);
     z-index: 1;
   }

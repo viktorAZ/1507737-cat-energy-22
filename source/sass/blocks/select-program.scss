@@ -4,7 +4,11 @@
   font-weight: 400;
   color: $basic-dark;
 
-  > .container {
+  @media #{$tablet} {
+    padding-bottom: 72px;
+  }
+
+  .container {
     @media #{$tablet} {
       padding: 0 67px 0 71px;
     }
@@ -89,7 +93,12 @@
 
 .select-program__notation {
   margin: 0;
+  padding: 21px 0 32px;
   font-family: $arial-font;
   font-size: 14px;
   line-height: 16px;
+
+  @media #{$tablet} {
+    padding: 0;
+  }
 }

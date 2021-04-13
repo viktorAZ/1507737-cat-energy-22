@@ -61,24 +61,26 @@
   display: block;
   padding: 22px 0 20px;
   font-weight: 500;
-
+  cursor: pointer;
 
   @media #{$tablet} {
     padding: 0 0 8px;
     font-weight: 400;
     color: $basic-dark;
 
-    &:hover {
+    &[href]:hover {
       color: rgba($basic-dark, 0.7);
     }
 
-    &:active {
+    &[href]:active {
       color: rgba($basic-dark, 0.5);
     }
   }
 }
 
 .main-nav__link--current {
+  cursor: default;
+
   @media #{$tablet} {
     &::after {
       display: block;
@@ -90,18 +92,6 @@
       height: 2px;
       background-color: $main-color;
     }
-
-    &:hover {
-      &::after {
-        background-color: rgba($basic-white, 0.7);
-      }
-
-      &:active {
-        &::after {
-          background-color: rgba($basic-white, 0.5);
-        }
-      }
-    }
   }
 }
 
@@ -109,17 +99,19 @@
   @media #{$desktop} {
     color: $basic-white;
 
-    &:hover {
+    &[href]:hover {
       color: rgba($basic-white, 0.7);
     }
 
-    &:active {
+    &[href]:active {
       color: rgba($basic-white, 0.5);
     }
   }
 }
 
 .page-header--index .main-nav__link--current {
+  cursor: default;
+
   @media #{$desktop} {
     &::after {
       display: block;
@@ -132,12 +124,12 @@
       background-color: $basic-white;
     }
 
-    &:hover {
+    &[href]:hover {
       &::after {
         background-color: rgba($basic-white, 0.7);
       }
 
-      &:active {
+      &[href]:active {
         &::after {
           background-color: rgba($basic-white, 0.5);
         }
@@ -148,11 +140,11 @@
   @media #{$desktop} {
     color: $basic-white;
 
-    &:hover {
+    &[href]:hover {
       color: rgba($basic-white, 0.7);
     }
 
-    &:active {
+    &[href]:active {
       color: rgba($basic-white, 0.5);
     }
   }

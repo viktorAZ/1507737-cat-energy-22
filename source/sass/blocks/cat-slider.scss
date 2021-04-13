@@ -49,6 +49,7 @@
   text-align: center;
   text-transform: uppercase;
   color: $basic-dark;
+  cursor: pointer;
 
   @media #{$tablet} {
     padding-bottom: 1px;
