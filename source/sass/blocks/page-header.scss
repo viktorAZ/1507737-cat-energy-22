@@ -10,11 +10,15 @@
         bottom: 0;
         left: 50%;
         content: "";
-        background-image: url("../img/index-bg-desktop.png");
+        background-image: url("../img/index-bg/index-bg-desktop.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: right center;
         z-index: -1;
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/index-bg/index-bg-desktop@2x.jpg");
+        }
       }
     }
   }
@@ -52,5 +56,19 @@
 
   @media #{$tablet} {
     padding: 0;
+  }
+}
+
+.page-header__logo-icon {
+  @media #{$tablet} {
+    display: block;
+    width: 174px;
+    height: 52px;
+  }
+}
+
+.page-header__logo-text {
+  @media #{$tablet} {
+    display: none;
   }
 }

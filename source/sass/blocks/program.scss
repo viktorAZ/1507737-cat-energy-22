@@ -56,12 +56,22 @@
     grid-row: 1 / -1;
     width: 200px;
     height: 211px;
+
+    &--weight {
+      width: 268px;
+      height: 200px;
+    }
   }
 
   @media #{$desktop} {
     margin-right: 55px;
     width: 100px;
     height: 106px;
+
+    &--weight {
+      width: 134px;
+      height: 100px;
+    }
   }
 }
 
