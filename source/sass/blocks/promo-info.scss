@@ -1,7 +1,7 @@
 .promo-info {
   background-image:
     linear-gradient(to top, $basic-white 97px, transparent 97px),
-    url("../img/index-bg-mobile.jpg"),
+    url("../img/index-bg/index-bg-mobile.jpg"),
     linear-gradient(to top, $basic-white 197px, $promo-bg-color 197px);
   background-repeat: no-repeat;
   background-position: top;
@@ -11,7 +11,7 @@
   @media (min-resolution: 2dppx) {
     background-image:
       linear-gradient(to top, $basic-white 97px, transparent 97px),
-      url("../img/index-bg-mobile@2x.jpg"),
+      url("../img/index-bg/index-bg-mobile@2x.jpg"),
       linear-gradient(to top, $basic-white 197px, $promo-bg-color 197px);
   }
 
