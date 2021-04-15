@@ -1,12 +1,19 @@
 .promo-info {
   background-image:
     linear-gradient(to top, $basic-white 97px, transparent 97px),
-    url("../img/promo-bg.jpg"),
+    url("../img/index-bg/index-bg-mobile.jpg"),
     linear-gradient(to top, $basic-white 197px, $promo-bg-color 197px);
   background-repeat: no-repeat;
   background-position: top;
   background-color: $promo-bg-color;
   background-size: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      linear-gradient(to top, $basic-white 97px, transparent 97px),
+      url("../img/index-bg/index-bg-mobile@2x.jpg"),
+      linear-gradient(to top, $basic-white 197px, $promo-bg-color 197px);
+  }
 
   @media #{$tablet} {
     background: none;
@@ -20,14 +27,15 @@
 .promo-info__wrapper {
   position: relative;
   padding-top: 27px;
+  display: flex;
+  flex-direction: column;
   font-family: $oswald-font;
   text-align: center;
   color: $basic-white;
 
   @media #{$tablet} {
     padding: 50px 0 20px;
-    display: flex;
-    flex-direction: column;
+
     text-align: left;
   }
 
@@ -72,7 +80,6 @@
   @media #{$tablet} {
     width: 709px;
     height: 609px;
-    order: 4;
   }
 
   @media #{$desktop} {
@@ -90,9 +97,12 @@
   font-size: 14px;
   line-height: 18px;
 
+  @media #{$mobile-only} {
+    order: 1;
+  }
+
   @media #{$tablet} {
     padding: 14px 26px;
-    margin-bottom: -80px;
     max-width: 244px;
     z-index: 2;
   }
