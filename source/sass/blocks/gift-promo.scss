@@ -18,18 +18,32 @@
   font-size: 16px;
   line-height: 20px;
   color: $basic-white;
-  background: url("../img/gift-photo-mobile1.jpg") center center/cover no-repeat, $main-color;
+  background: url("../img/gift/gift-photo-mobile.jpg") center center/cover no-repeat, $main-color;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/gift/gift-photo-mobile@2x.jpg") center center/cover no-repeat, $main-color;
+  }
 
   @media #{$tablet} {
     padding: 57px 124px 60px 78px;
     flex-direction: row;
     justify-content: space-between;
+    background: url("../img/gift/gift-photo-tablet.jpg") center center/cover no-repeat, $main-color;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/gift/gift-photo-tablet@2x.jpg") center center/cover no-repeat, $main-color;
+    }
   }
 
   @media #{$desktop} {
     flex-direction: column;
     padding: 56px 43px 42px 41px;
     width: 245px;
+    background: url("../img/gift/gift-photo-desktop.jpg") center center/cover no-repeat, $main-color;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/gift/gift-photo-desktop@2x.jpg") center center/cover no-repeat, $main-color;
+    }
   }
 }
 

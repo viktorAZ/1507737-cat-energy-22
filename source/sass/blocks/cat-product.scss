@@ -142,6 +142,10 @@
     font-size: 20px;
     line-height: 21px;
   }
+
+  &:active {
+    color: rgba($basic-dark, 0.3);
+  }
 }
 
 .cat-product__show-more {
