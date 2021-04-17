@@ -138,6 +138,10 @@
 }
 
 .program__link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding-right: 65px;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -145,12 +149,28 @@
   color: $basic-dark;
   cursor: pointer;
 
-  &:active {
-    color: rgba($basic-dark, 0.3);
-  }
-
   @media #{$tablet} {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 136px;
+    width: 24px;
+    height: 12px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 12' fill='currentColor'%3E%3Cpath stroke='%23000' stroke-width='2' d='M0 6h18'/%3E%3Cpath d='m24 6-6.75 5.196V.804L24 6z' fill='%23000'/%3E%3C/svg%3E%0A");
+  }
+
+  &:hover {
+    &::after {
+      width: 32px;
+      background-image: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 12'%3E%3Cpath stroke='%23000' stroke-width='2' d='M0 6h26'/%3E%3Cpath d='m32 6-6.75 5.196V.804L32 6z' fill='%23000'/%3E%3C/svg%3E%0A");
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

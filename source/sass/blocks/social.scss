@@ -17,5 +17,14 @@
 }
 
 .social__link {
+  color: #666666;
   cursor: pointer;
+
+  &:hover {
+    color: $main-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
