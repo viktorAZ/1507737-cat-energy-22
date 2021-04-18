@@ -55,6 +55,15 @@
         <a href="form.html" class="promo-info__content promo-info__button button">подобрать программу</a>
         <picture>
           <source media="(min-width: 1440px)"
+            srcset="img/promo-img/promo-product1-desktop.webp 1x, img/promo-img/promo-product1-desktop@2x.webp 2x"
+            type="image/webp">
+          <source media="(min-width: 768px)"
+            srcset="img/promo-img/promo-product1-tablet.webp 1x, img/promo-img/promo-product1-tablet@2x.webp 2x"
+            type="image/webp">
+          <source srcset="img/promo-img/promo-product1-mobile.webp 1x, img/promo-img/promo-product1-mobile@2x.webp 2x"
+            type="image/webp">
+
+          <source media="(min-width: 1440px)"
             srcset="img/promo-img/promo-product1-desktop.png 1x, img/promo-img/promo-product1-desktop@2x.png 2x">
           <source media="(min-width: 768px)"
             srcset="img/promo-img/promo-product1-tablet.png 1x, img/promo-img/promo-product1-tablet@2x.png 2x">
@@ -87,9 +96,9 @@
             </div>
           </li>
           <li class="program__item program__item--weight">
-              <svg class="program__img program__img--weight" width="67" height="50">
-                <use xlink:href="img/sprite.svg#weight-icon"></use>
-              </svg>
+            <svg class="program__img program__img--weight" width="67" height="50">
+              <use xlink:href="img/sprite.svg#weight-icon"></use>
+            </svg>
             <h3 class="program__title">набор массы</h3>
             <p class="program__description">
               Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat Energy Pro поможет вашему коту
@@ -170,12 +179,18 @@
         <div class="presentation__slider cat-slider">
           <div class="cat-slider__demo">
             <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-slider/cat-fat-desktop.webp 1x, img/cat-slider/cat-fat-desktop@2x.webp 2x" type="image/webp">
+              <source srcset="img/cat-slider/cat-fat-mobile.webp 1x, img/cat-slider/cat-fat-mobile@2x.webp 2x" type="image/webp">
+
               <source media="(min-width: 768px)"
                 srcset="img/cat-slider/cat-fat-desktop.png 1x, img/cat-slider/cat-fat-desktop@2x.png 2x">
               <img class="cat-slider__img cat-slider__img--before" src="img/cat-slider/cat-fat-mobile.png"
                 srcset="img/cat-slider/cat-fat-mobile@2x.png 2x" alt="Ваш кот до Cat Energy" width="311" height="232">
             </picture>
             <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-slider/cat-skinny-desktop.webp 1x, img/cat-slider/cat-skinny-desktop@2x.webp 2x" type="image/webp">
+              <source srcset="img/cat-slider/cat-skinny-mobile.webp 1x, img/cat-slider/cat-skinny-mobile@2x.webp 2x" type="image/webp">
+
               <source media="(min-width: 768px)"
                 srcset="img/cat-slider/cat-skinny-desktop.png 1x, img/cat-slider/cat-skinny-desktop@2x.png 2x">
               <img class="cat-slider__img cat-slider__img--after" src="img/cat-slider/cat-skinny-mobile.png"
@@ -223,28 +238,28 @@
       <ul class="page-footer__social social">
         <li class="social__item">
           <a href="#" class="social__link" title="Мы в VK">
-            <svg width="27" height="16">
+            <svg class="social__vk" width="27" height="16">
               <use xlink:href="img/sprite.svg#vk-icon"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link" title="Мы в Instagram">
-            <svg width="27" height="16">
+            <svg class="social__instagram" width="16" height="16">
               <use xlink:href="img/sprite.svg#instagram-icon"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link" title="Мы в Facebook">
-            <svg width="27" height="16">
+            <svg class="social__facebook" width="22" height="22">
               <use xlink:href="img/sprite.svg#facebook-icon"></use>
             </svg>
           </a>
         </li>
       </ul>
       <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
-        HTML Academy
+        <p class="copyright__text">HTML Academy</p>
         <svg class="copyright__logo" width="27" height="34">
           <use xlink:href="img/sprite.svg#htmlacademy-logo"></use>
         </svg>

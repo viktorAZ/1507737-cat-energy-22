@@ -119,7 +119,8 @@
                 <source media="(min-width: 768px)"
                   srcset="img/products/fish500-desktop.png 1x, img/products/fish500-desktop@2x.png 2x">
                 <img class="cat-product__img" src="img/products/fish500-mobile.png"
-                  srcset="img/products/fish500-mobile@2x.png 2x" alt="Cat Energy Pro с рыбой 500г" width="68" height="78">
+                  srcset="img/products/fish500-mobile@2x.png 2x" alt="Cat Energy Pro с рыбой 500г" width="68"
+                  height="78">
               </picture>
             </div>
             <div class="cat-product__content">
@@ -330,29 +331,37 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper container">
-      <a class="page-footer__logo" href="index.html">
+      <a class="page-footer__logo">
         <img src="img/logo/cat-footer-logo.svg" alt="Логотип сайта Cat Energy" width="126" height="24">
       </a>
       <ul class="page-footer__social social">
         <li class="social__item">
           <a href="#" class="social__link" title="Мы в VK">
-            <img src="img/icons/vk-icon.svg" class="social__icon" alt="VK" width="23" height="16">
+            <svg class="social__vk" width="27" height="16">
+              <use xlink:href="img/sprite.svg#vk-icon"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link" title="Мы в Instagram">
-            <img src="img/icons/instagram-icon.svg" class="social__icon" alt="Instagram" width="16" height="16">
+            <svg class="social__instagram" width="16" height="16">
+              <use xlink:href="img/sprite.svg#instagram-icon"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link" title="Мы в Facebook">
-            <img src="img/icons/facebook-icon.svg" class="social__icon" alt="Facebook" width="22" height="22">
+            <svg class="social__facebook" width="22" height="22">
+              <use xlink:href="img/sprite.svg#facebook-icon"></use>
+            </svg>
           </a>
         </li>
       </ul>
       <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="copyright__text">HTML Academy</p>
-        <img src="img/htmlacademy.svg" class="copyright__logo" alt="HTMLAcademy" width="27" height="34">
+        <svg class="copyright__logo" width="27" height="34">
+          <use xlink:href="img/sprite.svg#htmlacademy-logo"></use>
+        </svg>
       </a>
     </div>
   </footer>

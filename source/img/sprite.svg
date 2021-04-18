@@ -67,8 +67,4 @@
       </clipPath>
     </defs>
   </symbol>
-  <symbol id="arrow-link" viewBox="0 0 24 12" fill="currentColor">
-    <path stroke="#000" stroke-width="2" d="M0 6h18"/>
-    <path d="m24 6-6.75 5.196V.804L24 6z" fill="#000"/>
-  </symbol>
 </svg>
