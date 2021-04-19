@@ -174,7 +174,10 @@
               <dd class="stats-list__value"><b>60 дней</b></dd>
             </div>
           </dl>
-          <p class="presentation__count">Затраты на питание: <span class="presentation__price">15 000 РУБ.</span></p>
+          <div class="presentation__food-cost">
+            <p class="presentation__costs">Затраты на питание:</p>
+            <span class="presentation__price">15 000 РУБ.</span>
+          </div>
         </div>
         <div class="presentation__slider cat-slider">
           <div class="cat-slider__demo">
@@ -210,20 +213,21 @@
               <source media="(min-width: 768px)"
                 srcset="img/cat-slider/cat-skinny-tablet.png 1x, img/cat-slider/cat-skinny-tablet@2x.png 2x">
               <img class="cat-slider__skinny-img" src="img/cat-slider/cat-skinny-mobile.png"
-                srcset="img/cat-slider/cat-skinny-mobile@2x.png 2x" alt="Ваш кот до Cat Energy" width="311" height="232">
+                srcset="img/cat-slider/cat-skinny-mobile@2x.png 2x" alt="Ваш кот до Cat Energy" width="311"
+                height="232">
             </picture>
           </div>
           <div class="cat-slider__control">
-            <span class="cat-slider__control-text">было</span>
+            <span class="cat-slider__button cat-slider__button--before">было</span>
             <div class="cat-slider__range">
               <div class="cat-slider__range-controls">
                 <div class="cat-slider__scale">
-                  <div class="cat-slider__bar" style="width: 45%;"></div>
+                  <div class="cat-slider__bar"></div>
                 </div>
                 <div class="cat-slider__thumb"></div>
               </div>
             </div>
-            <span class="cat-slider__control-text">стало</span>
+            <button class="cat-slider__button cat-slider__button--after">стало</button>
           </div>
         </div>
       </div>
