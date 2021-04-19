@@ -74,6 +74,10 @@
     .form-fieldset__item {
       margin-bottom: 14px;
 
+      @media #{$tablet} {
+        margin-bottom: 20px;
+      }
+
       @media #{$desktop} {
         width: 570px;
       }
@@ -215,13 +219,10 @@
 }
 
 .form-fieldset__item {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  @media #{$tablet} {
-    justify-content: flex-start;
-  }
 }
 
 .form-fieldset__input-label,
@@ -236,20 +237,33 @@
 }
 
 .form-fieldset__input {
-  padding: 13px 15px;
+  padding: 13px 38px 13px 15px;
   margin-left: 13px;
   min-height: 45px;
   width: 100%;
   border: 1px solid #e7e7e7;
   cursor: text;
 
+  @media #{$tablet} {
+    margin-left: 19px;
+    min-height: 52px;
+  }
+
   &:hover {
     border: 1px solid #cdcdcd;
   }
 
   &:focus {
-    padding: 12px 14px;
+    padding: 12px 37px 12px 14px;
     border: 2px solid #444444;
+
+    & + .form-fieldset__phone-icon svg {
+      fill: $main-color;
+    }
+
+    & + .form-fieldset__email-icon svg {
+      stroke: $main-color;
+    }
   }
 
   &--error {
@@ -257,8 +271,25 @@
     border: 2px solid #ff8282;
 
     &:hover,
-    &:active {
+    &:active,
+    &:focus {
       border: 2px solid #ff8282;
+
+      & + .form-fieldset__phone-icon svg {
+        fill: #ff8282;
+      }
+
+      & + .form-fieldset__email-icon svg {
+        stroke: #ff8282;
+      }
+    }
+
+    & + .form-fieldset__phone-icon svg {
+      fill: #ff8282;
+    }
+
+    & + .form-fieldset__email-icon svg {
+      stroke: #ff8282;
     }
   }
 }
@@ -374,5 +405,20 @@
   &:disabled + label::after,
   &:disabled + .form-fieldset__checkbox-label {
     opacity: 0.3;
+  }
+}
+
+.form-fieldset__phone-icon,
+.form-fieldset__email-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 13px;
+  width: 20px;
+  height: 20px;
+
+  @media #{$tablet} {
+    right: 17px;
   }
 }
