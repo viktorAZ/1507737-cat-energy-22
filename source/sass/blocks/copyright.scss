@@ -3,20 +3,39 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 22px;
-  cursor: pointer;
-
-  @media #{$tablet} {
-    padding-top: 0;
-  }
-}
-
-.copyright__text {
-  margin: 0;
   font-family: $arial-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: $description-text-color;
+  cursor: pointer;
+  text-transform: capitalize;
+
+  @media #{$tablet} {
+    padding-top: 0;
+  }
+
+  &:hover {
+    .copyright__logo {
+      color: $main-color;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__logo {
+  color: #666666;
+}
+
+.copyright__text {
+  margin: 0;
+
+  @media #{$tablet} {
+    padding-right: 22px;
+  }
 
   &:active {
     color: rgba($description-text-color, 0.3);

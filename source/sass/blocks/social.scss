@@ -17,5 +17,35 @@
 }
 
 .social__link {
+  color: #666666;
   cursor: pointer;
+
+  &:hover {
+    color: $main-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__vk {
+  @media #{$tablet} {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.social__instagram {
+  @media #{$tablet} {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.social__facebook {
+  @media #{$tablet} {
+    width: 28px;
+    height: 33px;
+  }
 }
