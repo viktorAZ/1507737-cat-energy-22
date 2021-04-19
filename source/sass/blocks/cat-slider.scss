@@ -14,17 +14,62 @@
   @include reset-list-style();
 }
 
-.cat-slider__img {
-  &--after {
+.cat-slider__demo {
+  position: relative;
+  justify-content: center;
+  width: 320px;
+  height: 232px;
+
+  @media #{$tablet} {
+    width: 708px;
+    height: 510px;
+  }
+
+  @media #{$desktop} {
+    width: 620px;
+    height: 507px;
+  }
+}
+
+.cat-slider__fat-img,
+.cat-slider__skinny-img {
+  position: absolute;
+  bottom: 0;
+
+  @media #{$tablet} {
+    height: 510px;
+  }
+
+  @media #{$tablet} {
+    height: 507px;
+  }
+}
+
+.cat-slider__fat-img {
+  left: 0;
+
+  @media #{$tablet} {
+    width: 354px;
+  }
+
+  @media #{$desktop} {
+    width: 335px;
+  }
+}
+
+.cat-slider__skinny-img {
+  right: 0;
+
+  @media #{$mobile-only} {
     display: none;
   }
 
   @media #{$tablet} {
-    width: 708px;
+    width: 354px;
   }
 
   @media #{$desktop} {
-    width: 690px;
+    width: 285px;
   }
 }
 
