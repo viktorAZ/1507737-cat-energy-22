@@ -18,9 +18,9 @@ const cheerio = require('gulp-cheerio');
 // HTML
 
 const html = () => {
-  return gulp.src('source/**/*.html')
+  return gulp.src('./source/**/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest('./build'));
 }
 
 exports.html = html;
@@ -28,7 +28,7 @@ exports.html = html;
 // Styles
 
 const styles = () => {
-  return gulp.src("source/sass/style.{scss,sass}")
+  return gulp.src("./source/sass/style.{scss,sass}")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
@@ -38,7 +38,7 @@ const styles = () => {
     ]))
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("./build/css"))
     .pipe(sync.stream());
 }
 
@@ -47,10 +47,10 @@ exports.styles = styles;
 // Scripts
 
 const scripts = () => {
-  return gulp.src('source/js/*.{js,jsx}')
+  return gulp.src('./source/js/*.{js,jsx}')
     .pipe(terser())
     .pipe(rename("script.min.css"))
-    .pipe(gulp.dest("build/js"))
+    .pipe(gulp.dest("./build/js"))
     .pipe(sync.stream());
 }
 
@@ -61,7 +61,7 @@ exports.scripts = scripts;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: './build'
     },
     cors: true,
     notify: false,
@@ -75,20 +75,20 @@ exports.server = server;
 // Images
 
 const optimizeImages = () => {
-  return gulp.src("source/img/**/*.{jpg,png,svg}")
+  return gulp.src("./source/img/**/*.{jpg,png,svg}")
     .pipe(imagemin([
       imagemin.optipng({ optimizationLevel: 3 }),
       imagemin.mozjpeg({ progressive: true }),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("build/img"))
+    .pipe(gulp.dest("./build/img"))
 }
 
 exports.images = optimizeImages;
 
 const copyImages = () => {
-  return gulp.src("source/img/**/*.{jpg,png,svg}")
-    .pipe(gulp.dest("build/img"))
+  return gulp.src("./source/img/**/*.{jpg,png,svg}")
+    .pipe(gulp.dest("./build/img"))
 }
 
 exports.images = copyImages;
@@ -96,9 +96,9 @@ exports.images = copyImages;
 // Webp
 
 const createWebp = () => {
-  return gulp.src("source/img/**/*.{jpg,png}")
+  return gulp.src("./source/img/**/*.{jpg,png}")
     .pipe(webp({ quality: 90 }))
-    .pipe(gulp.dest("build/img"))
+    .pipe(gulp.dest("./build/img"))
 }
 
 exports.createWebp = createWebp;
@@ -106,7 +106,7 @@ exports.createWebp = createWebp;
 // SVGSprite
 
 const sprite = () => {
-  return gulp.src("source/img/icons/*.svg")
+  return gulp.src("./source/img/icons/*.svg")
     .pipe(svgstore({ inlineSvg: true }))
     .pipe(cheerio({
       run: function ($) {
@@ -118,7 +118,7 @@ const sprite = () => {
       parserOptions: { xmlMode: true }
     }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("./build/img"));
 }
 
 exports.sprite = sprite;
@@ -133,7 +133,7 @@ const copy = (done) => {
   ], {
     base: "source"
   })
-    .pipe(gulp.dest("build"))
+    .pipe(gulp.dest("./build"))
   done();
 }
 
@@ -142,7 +142,7 @@ exports.copy = copy;
 // Clean
 
 const clean = () => {
-  return del("build");
+  return del("./build");
 };
 
 exports.clean = clean;
@@ -157,9 +157,9 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series(styles));
-  gulp.watch("source/js/script.js", gulp.series(scripts));
-  gulp.watch("source/*.html", gulp.series(html, reload));
+  gulp.watch("./source/sass/**/*.{scss,sass}", gulp.series(styles));
+  gulp.watch("./source/js/script.js", gulp.series(scripts));
+  gulp.watch("./source/*.html", gulp.series(html, reload));
 }
 
 // Run build
