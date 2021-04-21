@@ -13,6 +13,7 @@ const del = require('del');
 const htmlmin = require('gulp-htmlmin');
 const terser = require('gulp-terser');
 const svgstore = require('gulp-svgstore');
+const cheerio = require('gulp-cheerio');
 
 // HTML
 
@@ -27,7 +28,7 @@ exports.html = html;
 // Styles
 
 const styles = () => {
-  return gulp.src("source/sass/style.scss")
+  return gulp.src("source/sass/style.{scss,sass}")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
@@ -106,8 +107,15 @@ exports.createWebp = createWebp;
 
 const sprite = () => {
   return gulp.src("source/img/icons/*.svg")
-    .pipe(svgstore({
-      inlineSvg: true
+    .pipe(svgstore({ inlineSvg: true }))
+    .pipe(cheerio({
+      run: function ($) {
+        $('svg').attr('style', 'display:none');
+      },
+      run: function ($) {
+        $('[fill]').removeAttr('fill');
+      },
+      parserOptions: { xmlMode: true }
     }))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
