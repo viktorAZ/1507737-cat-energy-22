@@ -10,7 +10,8 @@
   cursor: pointer;
   text-transform: uppercase;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $secondary-color;
   }
 
@@ -22,7 +23,8 @@
     color: $cat-product-text-color;
     background-color: $more-button-color;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $btn-gray-hover-color;
     }
 

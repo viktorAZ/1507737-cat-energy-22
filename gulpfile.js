@@ -49,7 +49,7 @@ exports.styles = styles;
 const scripts = () => {
   return gulp.src('./source/js/*.{js,jsx}')
     .pipe(terser())
-    .pipe(rename("script.min.css"))
+    .pipe(rename("script.min.js"))
     .pipe(gulp.dest("./build/js"))
     .pipe(sync.stream());
 }
@@ -110,10 +110,7 @@ const sprite = () => {
     .pipe(svgstore({ inlineSvg: true }))
     .pipe(cheerio({
       run: function ($) {
-        $('svg').attr('style', 'display:none');
-      },
-      run: function ($) {
-        $('[fill]').removeAttr('fill');
+        $('svg').attr('style', 'display: none;');
       },
       parserOptions: { xmlMode: true }
     }))

@@ -4,11 +4,6 @@
   justify-content: center;
   align-items: center;
   z-index: 2;
-
-  @media #{$desktop} {
-    grid-column: 2 / 3;
-    grid-row: 1 / -1;
-  }
 }
 
 .cat-slider__list {
@@ -76,6 +71,7 @@
 }
 
 .cat-slider__control {
+  padding-top: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,7 +124,7 @@
 
 .cat-slider__range-controls {
   position: relative;
-  margin: 0 12px;
+  margin: 0 18px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,7 +137,7 @@
 }
 
 .cat-slider__scale {
-  padding: 4px 6px;
+  padding: 4px 9px;
   width: 84px;
   height: 14px;
   background-color: $basic-white;
@@ -156,7 +152,7 @@
 
 .cat-slider__bar {
   @media #{$mobile-only} {
-    width: 50%;
+    width: 52%;
     height: 6px;
     background-color: $main-color;
     border-radius: 6px;

@@ -2,11 +2,12 @@
   padding: 27px 0 42px;
 
   @media #{$tablet} {
+    padding: 45px 0 6px;
     border-bottom: 1px solid $burger-border-color;
   }
 
   @media #{$desktop} {
-    padding: 49px 0 1px;
+    padding: 41px 0 1px;
     border: none;
   }
 }
@@ -32,6 +33,8 @@
   flex-direction: column;
 
   @media #{$tablet} {
+    margin-bottom: -37px;
+    padding: 34px 0 0;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -47,29 +50,28 @@
   position: relative;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  min-height: 60px;
 
-  &:not(:last-child) {
-    margin-bottom: 37px;
+  @media (min-width: 370px) and (max-width: 767px) {
+    align-items: center;
 
-    @media #{$desktop} {
-      margin-bottom: 0;
+    .features__description {
+      padding-top: 0;
     }
   }
 
   @media #{$tablet} {
-    padding: 40px 0 57px;
-    margin-right: 94px;
+    padding: 0 0 57px;
+    margin-right: 79px;
     flex-direction: column;
-    align-items: start;
-    width: 230px;
+    width: 245px;
     min-height: 280px;
 
     /* numbering bg */
 
     &::before {
       position: absolute;
-      top: 0;
+      top: -39px;
       right: 0;
       font-size: 280px;
       line-height: 1;
@@ -79,6 +81,7 @@
 
     &:nth-child(1)::before {
       content: "1";
+      right: 16px;
     }
 
     &:nth-child(2)::before {
@@ -94,13 +97,25 @@
     }
   }
 
+  @media (min-width: 830px) {
+    margin-right: 50px;
+  }
+
   @media #{$desktop} {
     flex-wrap: nowrap;
     justify-content: space-between;
     margin-right: 0;
+  }
 
-    &:nth-child(2n) {
-      margin-right: 0;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+
+    @media #{$tablet} {
+      margin-bottom: 37px;
+    }
+
+    @media #{$desktop} {
+      margin-bottom: 0;
     }
   }
 }
@@ -115,7 +130,6 @@
   background-color: $main-color;
 
   @media #{$tablet} {
-    margin-bottom: 31px;
     width: 80px;
     height: 80px;
   }
@@ -123,7 +137,7 @@
 
 .features__description {
   margin: 0;
-  padding: 2px 24px 4px 20px;
+  padding: 2px 0 0 20px;
   font-family: $arial-font;
   font-weight: 400;
   font-size: 14px;
@@ -131,8 +145,12 @@
   color: $description-text-color;
 
   @media #{$tablet} {
-    padding: 0;
+    padding: 31px 0 0;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media #{$desktop} {
+    padding: 31px 0 39px;
   }
 }

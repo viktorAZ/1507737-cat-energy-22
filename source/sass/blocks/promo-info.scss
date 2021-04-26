@@ -20,7 +20,7 @@
   }
 
   @media #{$desktop} {
-    padding-bottom: 237px;
+    padding-bottom: 165px;
   }
 }
 
@@ -34,23 +34,23 @@
   color: $basic-white;
 
   @media #{$tablet} {
-    padding: 50px 0 20px;
-
+    padding-top: 50px;
     text-align: left;
   }
 
   @media #{$desktop} {
-    padding: 50px 10px 20px;
+    padding: 91px 0 20px;
   }
 }
 
 .promo-info__title {
-  margin: 0 0 25px;
+  margin: 0 0 24px;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
 
   @media #{$tablet} {
+    margin: 0 0 41px;
     max-width: 414px;
     font-size: 60px;
     line-height: 60px;
@@ -71,6 +71,10 @@
     line-height: 20px;
     color: $basic-dark;
   }
+
+  @media #{$desktop} {
+    margin-bottom: 51px;
+  }
 }
 
 .promo-info__img {
@@ -78,14 +82,17 @@
   margin: 0 auto;
 
   @media #{$tablet} {
+    margin-bottom: -83px;
+    position: relative;
     width: 709px;
     height: 609px;
+    bottom: 83px;
   }
 
   @media #{$desktop} {
     position: absolute;
-    top: 0;
-    left: 478px;
+    top: 9px;
+    left: 448px;
     width: 552px;
     height: 499px;
   }
@@ -102,20 +109,24 @@
   }
 
   @media #{$tablet} {
-    padding: 14px 26px;
-    max-width: 244px;
+    padding: 17px 26px;
+    width: 244px;
+    font-size: 20px;
+    line-height: 20px;
     z-index: 2;
   }
 
   @media #{$desktop} {
     margin-bottom: 0;
-    font-size: 20px;
-    line-height: 20px;
   }
 }
 
 .promo-info__content {
   @media #{$tablet} {
-    margin-left: 100px;
+    margin-left: 87px;
+  }
+
+  @media #{$tablet} {
+    margin-left: 80px;
   }
 }

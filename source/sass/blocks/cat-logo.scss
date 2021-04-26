@@ -1,0 +1,44 @@
+.cat-logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media #{$tablet} {
+    align-items: flex-start;
+  }
+}
+
+.cat-logo__mobile {
+  flex: none;
+
+  @media #{$tablet} {
+    display: none;
+  }
+}
+
+.cat-logo__tablet {
+  display: none;
+
+  @media #{$tablet} {
+    display: block;
+  }
+
+  @media #{$desktop} {
+    display: none;
+  }
+}
+
+.cat-logo__desktop {
+  display: none;
+
+  @media #{$desktop} {
+    display: block;
+  }
+}
+
+.cat-logo__text {
+  display: flex;
+  flex-grow: 1;
+  padding-right: 34px;
+}

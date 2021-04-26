@@ -1,6 +1,4 @@
 .location {
-  position: relative;
-
   &--gray {
     background-color: $location-bg-color;
 
@@ -18,6 +16,12 @@
   }
 }
 
+.location__wrapper {
+  @media #{$desktop} {
+    position: relative;
+  }
+}
+
 .location__info-block {
   padding: 28px 0 26px;
   display: flex;
@@ -26,15 +30,15 @@
   background-color: $basic-white;
 
   @media #{$tablet} {
-    padding: 62px 41px 51px;
+    padding: 62px 41px 58px;
   }
 
   @media #{$desktop} {
-    padding: 62px 89px 51px 76px;
-    width: 570px;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 95px;
+    left: 0;
+    padding: 62px 89px 58px 76px;
+    width: 570px;
     z-index: 1;
   }
 }
@@ -44,17 +48,18 @@
   font-family: $oswald-font;
   font-weight: 400;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 21px;
   text-transform: uppercase;
   color: $location-text-color;
 
   @media #{$tablet} {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 27px;
   }
 }
 
 .location__address {
+  padding-right: 4px;
   font-family: $arial-font;
   font-weight: 400;
   font-size: 14px;
@@ -76,7 +81,7 @@
 
     &:not(:last-child) {
       @media #{$tablet} {
-        margin-bottom: 17px;
+        margin-bottom: 20px;
       }
     }
   }

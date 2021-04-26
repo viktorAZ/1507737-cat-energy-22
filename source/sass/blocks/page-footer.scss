@@ -1,13 +1,12 @@
 .page-footer {
-  padding: 39px 0 22px;
   background-color: $footer-bg-color;
 
   @media #{$tablet} {
-    padding: 55px 0 61px;
+    padding: 24px 0 31px;
   }
 
   @media #{$desktop} {
-    padding: 57px 0 58px;
+    padding: 27px 0 31px;
   }
 }
 
@@ -19,12 +18,8 @@
   }
 }
 
-// FIXME:
 .page-footer__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 32px;
+  padding: 36px 0 31px;
 
   &[href]:hover {
     opacity: 0.8;
@@ -35,11 +30,24 @@
     opacity: 0.6;
   }
 
-  img {
-    display: block;
+  .cat-logo__text {
+    flex-grow: 0;
+    padding: 0;
   }
+}
+
+.page-footer__social {
+  padding: 22px 81px 20px 72px;
 
   @media #{$tablet} {
-    padding-bottom: 0;
+    padding: 0 0 0 18px;
+  }
+}
+
+.page-footer__copyright {
+  padding: 22px 0 22px;
+
+  @media #{$tablet} {
+    padding: 0;
   }
 }
