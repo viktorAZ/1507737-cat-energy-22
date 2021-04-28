@@ -1,29 +1,34 @@
 .cat-product {
-  @include reset-list-style();
-
+  padding: 0;
   margin: 0 -20px;
   font-family: $oswald-font;
-  border-top: 1px solid $catalog-border-color;
+  border-top: 1px solid $special-gray-light;
+  list-style: none;
 
   @media #{$tablet} {
     margin: 0 -30px 0;
+    padding: 43px 0 0;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
     border: none;
   }
 
+  @media (min-width: 769px) {
+    justify-content: center;
+  }
+
   @media #{$desktop} {
+    justify-content: flex-start;
     margin: 0 -40px 0;
   }
 }
 
 .cat-product__item {
-  padding: 19px 20px 25px;
+  padding: 21px 20px 24px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  border-bottom: 1px solid $catalog-border-color;
+  border-bottom: 1px solid $special-gray-light;
 
   @media #{$tablet} {
     padding: 8px 36px 40px;
@@ -31,13 +36,13 @@
     width: 324px;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(to bottom, #ffffff 11%, #f2f2f2 11%, #f2f2f2 80%);
+    background-image: linear-gradient(to bottom, $basic-white 16%, $basic-gray 0%, $basic-gray 70%);
     border: none;
   }
 
   @media #{$desktop} {
-    padding: 1px 30px 39px 35px;
-    margin: 0 40px 62px;
+    padding: 1px 30px 40px 35px;
+    margin: 0 40px 60px;
     max-width: 245px;
   }
 
@@ -49,74 +54,56 @@
     align-items: center;
 
     @media #{$tablet} {
-      height: 468px;
+      padding: 159px 37px 35px;
+      align-self: flex-end;
+      justify-content: flex-start;
+      height: 427px;
       background-image: none;
-      border: 2px solid $product-bg-color;
+      border: 2px solid $basic-gray;
     }
 
     @media #{$desktop} {
-      height: 464px;
-    }
-
-    &::before,
-    &::after {
-      position: absolute;
-      content: "";
-      top: 39px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 30px;
-      height: 2px;
-      background-color: #d3d3d3;
-
-      @media #{$tablet} {
-        top: 82px;
-        width: 60px;
-      }
-
-      @media #{$desktop} {
-        top: 81px;
-      }
-    }
-
-    &::after {
-      top: 25px;
-      height: 30px;
-      width: 2px;
-
-      @media #{$tablet} {
-        top: 54px;
-        height: 60px;
-      }
-
-      @media #{$desktop} {
-        top: 53px;
-      }
+      height: 430px;
     }
   }
 }
 
-.cat-product__img-block {
+.cat-product__plus {
+  position: absolute;
+  top: 25px;
+  width: 30px;
+  height: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23D3D3D3' stroke-width='2' d='M15 0v30M30 15H0'/%3E%3C/svg%3E%0A");
+
+  @media #{$tablet} {
+    top: 52px;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.cat-product__img-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 112px;
   width: 50%;
   object-fit: contain;
 
   @media #{$tablet} {
-    margin-bottom: 28px;
+    margin-bottom: 34px;
     align-items: flex-end;
     width: 168px;
     height: 200px;
   }
 
   @media #{$desktop} {
+    margin-bottom: 44px;
     width: 172px;
     height: 200px;
   }
 }
 
-// Сделал как контейнер для будущих картинок, пока этот класс на самой картинке
 .cat-product__img {
   display: block;
 
@@ -144,7 +131,6 @@
 
   @media #{$tablet} {
     align-items: center;
-    margin-bottom: 33px;
     width: auto;
   }
 }
@@ -156,7 +142,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: $cat-product-title-color;
+  color: $special-gray-darkest;
 }
 
 .cat-product__name {
@@ -171,21 +157,22 @@
   }
 
   @media #{$desktop} {
-    margin-bottom: 21px;
+    margin-bottom: 18px;
     font-size: 20px;
     line-height: 21px;
   }
 
   &:active {
-    color: rgba($basic-dark, 0.3);
+    color: rgba($special-gray-darkest, 0.3);
   }
 }
 
 .cat-product__show-more {
   margin-bottom: 8px;
-  color: $cat-product-more-color;
+  color: $basic-black-light;
 
   @media #{$tablet} {
+    margin-bottom: 24px;
     max-width: 150px;
     font-size: 20px;
     line-height: 22px;
@@ -200,9 +187,11 @@
   font-size: 12px;
   line-height: 16px;
   text-align: center;
-  color: $cat-product-text-color;
+  color: $special-gray-darker;
 
   @media #{$tablet} {
+    margin: 0 0 24px;
+    max-width: 167px;
     font-size: 16px;
     line-height: 18px;
   }
@@ -230,33 +219,40 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 138px;
+  width: 141px;
 
   @media #{$tablet} {
-    padding: 7px 0 9px;
+    padding: 7px 0 8px;
+    align-items: baseline;
     width: 250px;
-    border-bottom: 1px solid $product-data-border-color;
+    border-bottom: 1px solid $special-gray;
   }
 
   @media #{$desktop} {
-    width: 170px;
-  }
-
-  &:not(:last-child) {
-    margin-bottom: 2px;
-
-    @media #{$tablet} {
-      margin-bottom: 0;
-    }
+    width: 165px;
   }
 }
 
 .cat-product__button {
-  padding: 10px 44px;
-  margin-top: 13px;
+  padding: 8px 24px;
+  margin-top: 11px;
   width: 100%;
 
+  @media #{$tablet} {
+    padding: 8px 24px 7px;
+    margin-top: 33px;
+  }
+
+  @media #{$tablet} {
+    padding: 8px 24px;
+    margin-top: 32px;
+  }
+
   &--gray {
-    margin-top: auto;
+    margin-top: 0;
+
+    @media #{$tablet} {
+      margin-top: auto;
+    }
   }
 }

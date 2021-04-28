@@ -19,32 +19,38 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper container">
-      <a class="page-header__logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo/cat-logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo/cat-logo-tablet.svg">
-          <img class="page-header__logo-icon" src="img/logo/cat-logo-mobile.svg" alt="Логотип сайта Cat Energy"
-            width="33" height="37">
-        </picture>
-        <img class="page-header__logo-text" src="img/logo/cat-footer-logo.svg" alt="Логотип сайта Cat Energy"
-          width="101" height="18">
+      <a class="page-header__logo cat-logo" href="index.html">
+        <svg class="cat-logo__mobile" width="33" height="38">
+          <use xlink:href="img/sprite.svg#cat-logo-mobile"/>
+        </svg>
+        <svg class="cat-logo__tablet" width="174" height="51">
+          <use xlink:href="img/sprite.svg#cat-logo-tablet"/>
+        </svg>
+        <svg class="cat-logo__desktop" width="202" height="59">
+          <use xlink:href="img/sprite.svg#cat-logo-desktop"/>
+        </svg>
+        <svg class="cat-logo__text" width="101" height="18">
+          <use xlink:href="img/sprite.svg#cat-text-logo"/>
+        </svg>
       </a>
 
-      <nav class="main-nav main-nav--opened main-nav--no-js">
+      <nav class="main-nav main-nav--closed main-nav--no-js">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Показать/Скрыть Меню</span>
         </button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--current">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link  main-nav__link--current">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>
@@ -56,7 +62,7 @@
         <h2 class="product-catalog__title">Каталог продукции</h2>
         <ul class="product-catalog__list cat-product">
           <li class="cat-product__item">
-            <div class="cat-product__img-block">
+            <div class="cat-product__img-container">
               <picture>
                 <source media="(min-width: 768px)"
                   srcset="img/products/chicken500-desktop.png 1x, img/products/chicken500-desktop@2x.png 2x">
@@ -85,7 +91,7 @@
             <a href="#" class="cat-product__button button">заказать</a>
           </li>
           <li class="cat-product__item">
-            <div class="cat-product__img-block">
+            <div class="cat-product__img-container">
               <picture>
                 <source media="(min-width: 768px)"
                   srcset="img/products/chicken1000-desktop.png 1x, img/products/chicken1000-desktop@2x.png 2x">
@@ -114,7 +120,7 @@
             <a href="#" class="cat-product__button button">заказать</a>
           </li>
           <li class="cat-product__item">
-            <div class="cat-product__img-block">
+            <div class="cat-product__img-container">
               <picture>
                 <source media="(min-width: 768px)"
                   srcset="img/products/fish500-desktop.png 1x, img/products/fish500-desktop@2x.png 2x">
@@ -143,7 +149,7 @@
             <a href="#" class="cat-product__button button">заказать</a>
           </li>
           <li class="cat-product__item">
-            <div class="cat-product__img-block">
+            <div class="cat-product__img-container">
               <picture>
                 <source media="(min-width: 768px)"
                   srcset="img/products/fish1000-desktop.png 1x, img/products/fish1000-desktop@2x.png 2x">
@@ -172,7 +178,7 @@
             <a href="#" class="cat-product__button button">заказать</a>
           </li>
           <li class="cat-product__item">
-            <div class="cat-product__img-block">
+            <div class="cat-product__img-container">
               <picture>
                 <source media="(min-width: 768px)"
                   srcset="img/products/buckwheat500-desktop.png 1x, img/products/buckwheat500-desktop@2x.png 2x">
@@ -201,7 +207,7 @@
             <a href="#" class="cat-product__button button">заказать</a>
           </li>
           <li class="cat-product__item">
-            <div class="cat-product__img-block">
+            <div class="cat-product__img-container">
               <picture>
                 <source media="(min-width: 768px)"
                   srcset="img/products/buckwheat1000-desktop.png 1x, img/products/buckwheat1000-desktop@2x.png 2x">
@@ -230,7 +236,7 @@
             <a href="#" class="cat-product__button button">заказать</a>
           </li>
           <li class="cat-product__item">
-            <div class="cat-product__img-block">
+            <div class="cat-product__img-container">
               <picture>
                 <source media="(min-width: 768px)"
                   srcset="img/products/rice500-desktop.png 1x, img/products/rice500-desktop@2x.png 2x">
@@ -259,9 +265,10 @@
             <a href="#" class="cat-product__button button">заказать</a>
           </li>
           <li class="cat-product__item cat-product__item--more">
+            <div class="cat-product__plus"></div>
             <h3 class="cat-product__show-more">Показать еще 100500 товаров</h3>
             <p class="cat-product__text">На самом деле вкусов гораздо больше!</p>
-            <button class="cat-product__button button button--gray" type="button">показать все</button>
+            <button class="cat-product__button cat-product__button--gray button button--gray" type="button">показать все</button>
           </li>
         </ul>
       </div>
@@ -306,7 +313,7 @@
         </ul>
         <div class="extra-products__banner gift-promo">
           <div class="gift-promo__banner">
-            <svg class="gift-promo__icon" width="78" height="80">
+            <svg class="gift-promo__icon" width="58" height="62">
               <use xlink:href="img/sprite.svg#gift-icon"></use>
             </svg>
             <p class="gift-promo__text">Закажите все <br> и получите чехол для <br> кота в подарок!</p>
@@ -333,40 +340,45 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper container">
-      <a class="page-footer__logo">
-        <img src="img/logo/cat-footer-logo.svg" alt="Логотип сайта Cat Energy" width="126" height="24">
+      <a class="page-footer__logo cat-logo" href="index.html">
+        <svg class="cat-logo__text" width="128" height="24">
+          <use xlink:href="img/sprite.svg#cat-text-logo" />
+        </svg>
       </a>
       <ul class="page-footer__social social">
         <li class="social__item">
           <a href="#" class="social__link" title="Мы в VK">
-            <svg class="social__vk" width="27" height="16">
-              <use xlink:href="img/sprite.svg#vk-icon"></use>
+            <svg class="social__icon social__icon--vk" width="23" height="16">
+              <use xlink:href="img/sprite.svg#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link" title="Мы в Instagram">
-            <svg class="social__instagram" width="16" height="16">
-              <use xlink:href="img/sprite.svg#instagram-icon"></use>
+            <svg class="social__icon social__icon--inst" width="16" height="16">
+              <use xlink:href="img/sprite.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link" title="Мы в Facebook">
-            <svg class="social__facebook" width="22" height="22">
-              <use xlink:href="img/sprite.svg#facebook-icon"></use>
+            <svg class="social__icon social__icon--fb" width="13" height="20">
+              <use xlink:href="img/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
       </ul>
-      <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive"
+        aria-label="Перейти на сайт HTMLAcademy">
         <p class="copyright__text">HTML Academy</p>
         <svg class="copyright__logo" width="27" height="34">
-          <use xlink:href="img/sprite.svg#htmlacademy-logo"></use>
+          <use xlink:href="img/sprite.svg#html-academy"></use>
         </svg>
       </a>
     </div>
   </footer>
+
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

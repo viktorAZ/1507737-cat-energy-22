@@ -27,7 +27,7 @@
   flex-wrap: wrap;
   padding: 30px 18px 18px 21px;
   font-family: $oswald-font;
-  background-color: $program-item-bg-color;
+  background-color: $basic-gray;
 
   @media #{$tablet} {
     padding: 77px 271px 57px 53px;
@@ -110,7 +110,7 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  color: $basic-dark;
+  color: $basic-black;
 
   @media #{$tablet} {
     padding-left: 0;
@@ -131,13 +131,13 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: $description-text-color;
+  color: $special-gray-darker;
 
   @media #{$tablet} {
     margin: 0 0 52px;
     font-size: 16px;
     line-height: 24px;
-    color: $basic-dark;
+    color: $basic-black;
   }
 
   @media #{$desktop} {
@@ -151,7 +151,7 @@
   @media #{$mobile-only} {
     flex: 1;
     padding-top: 15px;
-    border-top: 1px solid #d9d9d9;
+    border-top: 1px solid $basic-gray-darker;
   }
 
   @media #{$desktop} {
@@ -169,7 +169,7 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  color: $basic-dark;
+  color: $basic-black;
   cursor: pointer;
   transition: 0.2s;
 

@@ -3,8 +3,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid $footer-border-color;
-  border-bottom: 1px solid $footer-border-color;
+  border-top: 1px solid $basic-gray-darker;
+  border-bottom: 1px solid $basic-gray-darker;
   list-style: none;
 
   @media #{$tablet} {
@@ -18,12 +18,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #666666;
+  color: $special-gray-dark;
   cursor: pointer;
 
   &:hover,
   &:focus {
-    color: $main-color;
+    color: $basic-green;
   }
 
   &:active {

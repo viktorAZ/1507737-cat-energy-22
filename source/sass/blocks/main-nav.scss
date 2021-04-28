@@ -1,7 +1,7 @@
 .main-nav {
   position: relative;
   margin: 0 -20px;
-  border-top: 1px solid $burger-border-color;
+  border-top: 1px solid $special-gray-light;
 
   @media #{$tablet} {
     border-top: none;
@@ -58,7 +58,7 @@
 }
 
 .main-nav__item {
-  border-bottom: 1px solid $burger-border-color;
+  border-bottom: 1px solid $special-gray-light;
 
   @media #{$tablet} {
     border-bottom: none;
@@ -79,15 +79,15 @@
   @media #{$tablet} {
     padding: 0 0 8px;
     font-weight: 400;
-    color: $basic-dark;
+    color: $basic-black;
 
     &[href]:hover,
     &[href]:focus {
-      color: rgba($basic-dark, 0.7);
+      color: rgba($basic-black, 0.7);
     }
 
     &[href]:active {
-      color: rgba($basic-dark, 0.5);
+      color: rgba($basic-black, 0.5);
     }
   }
 }
@@ -104,7 +104,7 @@
       left: 0;
       right: 0;
       height: 2px;
-      background-color: $main-color;
+      background-color: $basic-green;
     }
   }
 }
@@ -194,8 +194,8 @@
   top: 0;
   width: 24px;
   height: 2px;
-  background-color: $basic-dark;
-  box-shadow: 0 8px 0 0 $basic-dark, 0 16px 0 0 $basic-dark;
+  background-color: $basic-black;
+  box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -205,7 +205,7 @@
     position: absolute;
     width: 24px;
     height: 2px;
-    background-color: $basic-dark;
+    background-color: $basic-black;
     transition: transform 0.1s;
   }
 
@@ -220,7 +220,7 @@
 
   &:active::before,
   &:active::after {
-    background-color: rgba($basic-dark, 0.3);
+    background-color: rgba($basic-black, 0.3);
   }
 }
 

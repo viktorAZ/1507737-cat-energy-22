@@ -2,17 +2,17 @@
   background-image:
     linear-gradient(to top, $basic-white 97px, transparent 97px),
     url("../img/index-bg/index-bg-mobile.jpg"),
-    linear-gradient(to top, $basic-white 197px, $promo-bg-color 197px);
+    linear-gradient(to top, $basic-white 197px, $secondary-green 197px);
   background-repeat: no-repeat;
   background-position: top;
-  background-color: $promo-bg-color;
+  background-color: $secondary-green;
   background-size: 100%;
 
   @media (min-resolution: 2dppx) {
     background-image:
       linear-gradient(to top, $basic-white 97px, transparent 97px),
       url("../img/index-bg/index-bg-mobile@2x.jpg"),
-      linear-gradient(to top, $basic-white 197px, $promo-bg-color 197px);
+      linear-gradient(to top, $basic-white 197px, $secondary-green 197px);
   }
 
   @media #{$tablet} {
@@ -54,7 +54,7 @@
     max-width: 414px;
     font-size: 60px;
     line-height: 60px;
-    color: $basic-dark;
+    color: $basic-black;
   }
 }
 
@@ -69,7 +69,7 @@
     margin-bottom: 49px;
     font-size: 20px;
     line-height: 20px;
-    color: $basic-dark;
+    color: $basic-black;
   }
 
   @media #{$desktop} {

@@ -36,8 +36,8 @@
   &--choose-program {
     margin: 0 -20px 44px;
     padding: 22px 20px 19px;
-    border-top: 1px solid $fieldset-border-mobile-color;
-    border-bottom: 1px solid $fieldset-border-mobile-color;
+    border-top: 1px solid $basic-gray-darker;
+    border-bottom: 1px solid $basic-gray-darker;
 
     .form-fieldset__item:not(:last-child) {
       margin-bottom: 24px;
@@ -45,7 +45,7 @@
 
     @media #{$tablet} {
       margin: 0 0 100px 0;
-      border: 1px solid $border-form-color;
+      border: 1px solid $basic-white-dark;
     }
 
     @media #{$desktop} {
@@ -56,11 +56,11 @@
 
   &--contacts {
     padding: 26px 0 23px;
-    border-top: 2px solid #68b738;
+    border-top: 2px solid $basic-green;
 
     @media #{$tablet} {
       padding: 88px 0 89px;
-      border-top: 2px solid $fieldset-border-color;
+      border-top: 2px solid $basic-green;
     }
 
     .form-fieldset__list {
@@ -109,11 +109,11 @@
 
   &--comment {
     padding: 0 0 23px;
-    border-top: 2px solid #68b738;
+    border-top: 2px solid $basic-green;
 
     @media #{$tablet} {
       padding: 88px 0 89px;
-      border-top: 2px solid $fieldset-border-color;
+      border-top: 2px solid $basic-green;
     }
 
     .container {
@@ -147,7 +147,7 @@
 
   &--optional {
     padding: 0 0 34px;
-    border-top: 2px solid #68b738;
+    border-top: 2px solid $basic-green;
 
     .form-fieldset__list {
       @media #{$tablet} {
@@ -205,7 +205,7 @@
   margin: 0;
   font-size: 24px;
   line-height: 26px;
-  color: $basic-dark;
+  color: $basic-black;
   text-transform: none;
 
   @media #{$tablet} {
@@ -229,7 +229,7 @@
 .form-fieldset__input {
   font: inherit;
   text-transform: uppercase;
-  color: $input-label-color;
+  color: $special-gray-darker;
 }
 
 .form-fieldset__input-label {
@@ -241,7 +241,7 @@
   margin-left: 13px;
   min-height: 45px;
   width: 100%;
-  border: 1px solid #e7e7e7;
+  border: 1px solid $basic-white-dark;
   cursor: text;
 
   @media #{$tablet} {
@@ -250,53 +250,53 @@
   }
 
   &:hover {
-    border: 1px solid #cdcdcd;
+    border: 1px solid $special-gray;
   }
 
   &:focus {
     padding: 12px 37px 12px 14px;
-    border: 2px solid #444444;
+    border: 2px solid $special-gray-darker;
 
     & + .form-fieldset__phone-icon svg {
-      fill: $main-color;
+      fill: $basic-green;
     }
 
     & + .form-fieldset__email-icon svg {
-      stroke: $main-color;
+      stroke: $basic-green;
     }
   }
 
   &--error {
     padding: 12px 14px;
-    border: 2px solid #ff8282;
+    border: 2px solid error-color;
 
     &:hover,
     &:active,
     &:focus {
-      border: 2px solid #ff8282;
+      border: 2px solid error-color;
 
       & + .form-fieldset__phone-icon svg {
-        fill: #ff8282;
+        fill: error-color;
       }
 
       & + .form-fieldset__email-icon svg {
-        stroke: #ff8282;
+        stroke: error-color;
       }
     }
 
     & + .form-fieldset__phone-icon svg {
-      fill: #ff8282;
+      fill: error-color;
     }
 
     & + .form-fieldset__email-icon svg {
-      stroke: #ff8282;
+      stroke: error-color;
     }
   }
 }
 
 .form-fieldset__radio-label,
 .form-fieldset__checkbox-label {
-  color: $radio-label-color;
+  color: $special-gray-darkest;
   cursor: pointer;
 }
 
@@ -318,7 +318,7 @@
     left: 0;
     width: 30px;
     height: 30px;
-    border: 1px solid #cdcdcd;
+    border: 1px solid $special-gray;
     border-radius: 50%;
 
     @media #{$tablet} {
@@ -335,7 +335,7 @@
     left: 9px;
     width: 13px;
     height: 13px;
-    background-color: #68b738;
+    background-color: $basic-green;
     border-radius: 50%;
 
     @media #{$tablet} {
@@ -374,7 +374,7 @@
     left: 0;
     width: 30px;
     height: 30px;
-    border: 1px solid #cdcdcd;
+    border: 1px solid $special-gray;
 
     @media #{$tablet} {
       width: 40px;

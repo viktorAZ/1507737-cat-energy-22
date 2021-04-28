@@ -2,16 +2,16 @@
   position: relative;
   padding: 27px 0 36px;
   font-family: $oswald-font;
-  background-color: $section-bg-color;
+  background-color: $basic-gray-dark;
 
   @media #{$tablet} {
     padding: 43px 0 67px;
-    background: linear-gradient(to bottom, $basic-white 619px, $presentation-bg-color 197px);
+    background: linear-gradient(to bottom, $basic-white 619px, $basic-gray-dark 197px);
   }
 
   @media #{$desktop} {
     padding: 10px 0 0;
-    background: linear-gradient(to bottom, #ffffff 201px, #f2f2f2 159px);
+    background: linear-gradient(to bottom, $basic-white 201px, $basic-gray 159px);
 
     &::after {
       content: "";
@@ -20,7 +20,7 @@
       bottom: 0;
       width: 625px;
       height: 462px;
-      background-color: #eaeaea;
+      background-color: $basic-gray-dark;
     }
   }
 }
@@ -54,7 +54,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  color: $basic-dark;
+  color: $basic-black;
 
   @media #{$tablet} {
     margin-bottom: 64px;
@@ -74,7 +74,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: $description-text-color;
+  color: $special-gray-darker;
 
   @media #{$tablet} {
     margin-bottom: 53px;
@@ -109,7 +109,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: $basic-dark;
+  color: $basic-black;
   text-align: center;
   text-transform: uppercase;
 
