@@ -1,71 +1,65 @@
-.gift-promo {
-  padding: 35px 0 39px;
-
-  @media #{$desktop} {
-    padding: 0;
-  }
-}
 
 .gift-promo__banner {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 43px 50px;
-  min-height: 289px;
+  padding: 64px 50px 41px;
   font-family: $arial-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: $basic-white;
-  background: url("../img/gift/gift-photo-mobile.jpg") center center/cover no-repeat, $main-color;
+  background: url("../img/gift/gift-photo-mobile.jpg") center center/cover no-repeat, $basic-green;
 
   @media (min-resolution: 2dppx) {
-    background: url("../img/gift/gift-photo-mobile@2x.jpg") center center/cover no-repeat, $main-color;
+    background: url("../img/gift/gift-photo-mobile@2x.jpg") center center/cover no-repeat, $basic-green;
   }
 
   @media #{$tablet} {
-    padding: 57px 124px 60px 78px;
+    padding: 63px 125px 68px 89px;
     flex-direction: row;
+    align-items: flex-start;
     justify-content: space-between;
-    background: url("../img/gift/gift-photo-tablet.jpg") center center/cover no-repeat, $main-color;
+    background: url("../img/gift/gift-photo-tablet.jpg") center center/cover no-repeat, $basic-green;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/gift/gift-photo-tablet@2x.jpg") center center/cover no-repeat, $main-color;
+      background: url("../img/gift/gift-photo-tablet@2x.jpg") center center/cover no-repeat, $basic-green;
     }
   }
 
   @media #{$desktop} {
     flex-direction: column;
-    padding: 56px 43px 42px 41px;
+    align-items: center;
+    padding: 62px 35px 41px;
     width: 245px;
-    background: url("../img/gift/gift-photo-desktop.jpg") center center/cover no-repeat, $main-color;
+    background: url("../img/gift/gift-photo-desktop.jpg") center center/cover no-repeat, $basic-green;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/gift/gift-photo-desktop@2x.jpg") center center/cover no-repeat, $main-color;
+      background: url("../img/gift/gift-photo-desktop@2x.jpg") center center/cover no-repeat, $basic-green;
     }
   }
 }
 
 .gift-promo__icon {
-  margin-bottom: 48px;
-
   @media #{$tablet} {
     margin-bottom: 0;
-    width: 80px;
-    height: 82px;
+    width: 60px;
+    height: 64px;
   }
 }
 
 .gift-promo__text {
   margin: 0;
+  padding: 62px 3px 0 0;
   text-align: center;
 
   @media #{$tablet} {
+    padding: 9px 0 0;
     text-align: left;
   }
 
   @media #{$desktop} {
+    padding: 62px 0 0;
     text-align: center;
   }
 }

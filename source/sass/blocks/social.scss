@@ -1,27 +1,29 @@
 .social {
-  @include reset-list-style();
-
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 77px 20px;
-  margin: 0 -20px;
-  border-top: 1px solid $footer-border-color;
-  border-bottom: 1px solid $footer-border-color;
+  border-top: 1px solid $basic-gray-darker;
+  border-bottom: 1px solid $basic-gray-darker;
+  list-style: none;
 
   @media #{$tablet} {
-    padding: 0;
-    width: 122px;
+    flex-wrap: wrap;
+    width: 144px;
     border: none;
   }
 }
 
 .social__link {
-  color: #666666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $special-gray-dark;
   cursor: pointer;
 
-  &:hover {
-    color: $main-color;
+  &:hover,
+  &:focus {
+    color: $basic-green;
   }
 
   &:active {
@@ -29,23 +31,25 @@
   }
 }
 
-.social__vk {
-  @media #{$tablet} {
-    width: 30px;
-    height: 22px;
+.social__icon {
+  &--vk {
+    @media #{$tablet} {
+      width: 29px;
+      height: 17px;
+    }
   }
-}
 
-.social__instagram {
-  @media #{$tablet} {
-    width: 23px;
-    height: 23px;
+  &--inst {
+    @media #{$tablet} {
+      width: 23px;
+      height: 23px;
+    }
   }
-}
 
-.social__facebook {
-  @media #{$tablet} {
-    width: 28px;
-    height: 33px;
+  &--fb {
+    @media #{$tablet} {
+      width: 18px;
+      height: 28px;
+    }
   }
 }

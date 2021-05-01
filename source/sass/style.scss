@@ -9,9 +9,9 @@
 
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
+@import "blocks/cat-logo.scss";
 @import "blocks/button.scss";
 @import "blocks/main-nav.scss";
-@import "blocks/toggle.scss";
 @import "blocks/promo-info.scss";
 @import "blocks/program.scss";
 @import "blocks/features.scss";
@@ -23,9 +23,17 @@
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
 @import "blocks/select-program.scss";
-@import "blocks/form-fieldset.scss";
 @import "blocks/product-catalog.scss";
 @import "blocks/cat-product.scss";
 @import "blocks/extra-products.scss";
 @import "blocks/optional-items.scss";
 @import "blocks/gift-promo.scss";
+
+// Form
+
+@import "blocks/form/field.scss";
+@import "blocks/form/cat-info-group.scss";
+@import "blocks/form/choose-program-group.scss";
+@import "blocks/form/comment-group.scss";
+@import "blocks/form/contacts-group.scss";
+@import "blocks/form/optional-group.scss";

@@ -1,29 +1,18 @@
 .stats-list {
-  @include reset-list-style();
-
   display: flex;
   justify-content: space-between;
-  margin-bottom: 34px;
-
-  @media #{$tablet} {
-    margin: 0;
-    width: 366px;
-  }
-
-  @media #{$desktop} {
-    padding-top: 15px;
-    margin-bottom: 60px;
-  }
+  align-items: baseline;
+  list-style: none;
 }
 
 .stats-list__item {
-  padding: 14px 8px 16px;
+  padding: 14px 16px 16px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 124px;
-  border: 1px solid $product-data-border-color;
+  border: 1px solid $special-gray;
   border-radius: 3px;
 
   @media #{$tablet} {
@@ -41,8 +30,8 @@
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  color: $description-text-color;
-  background-color: $presentation-bg-color;
+  color: $special-gray-darker;
+  background-color: $basic-gray-dark;
 
   @media #{$tablet} {
     padding: 0 8px;
@@ -54,23 +43,24 @@
   }
 
   @media #{$desktop} {
-    background-color: $presentation-bg-color;
+    background-color: $basic-gray;
   }
 }
 
 .stats-list__value {
-  margin: 0 0 9px;
+  margin: 0;
+  padding-bottom: 9px;
   display: block;
   font-family: $oswald-font;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  color: $basic-dark;
+  color: $basic-black;
   text-transform: uppercase;
   order: -1;
 
   @media #{$tablet} {
-    margin-bottom: 10px;
+    margin-bottom: 3px;
     font-size: 30px;
     line-height: 37px;
   }

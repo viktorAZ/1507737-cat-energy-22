@@ -1,0 +1,98 @@
+.comment-group {
+  padding: 0 0 18px;
+
+  @media #{$tablet} {
+    padding: 47px 0 60px;
+  }
+
+  @media #{$desktop} {
+    padding: 68px 0 62px;
+  }
+}
+
+.comment-group__title {
+  position: relative;
+  margin: 0 0 0 -20px;
+  padding: 0 23px 0 20px;
+  width: max-content;
+  max-width: 100%;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  color: $basic-black;
+  text-transform: none;
+  background-color: $basic-white;
+
+  @media #{$tablet} {
+    margin: 0 0 0 -41px;
+    padding: 0 41px 0 39px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      right: 100%;
+      width: 100vw;
+      height: 2px;
+      background-color: $basic-green;
+    }
+  }
+
+  @media #{$desktop} {
+    margin: 0 0 0 -39px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 100%;
+    width: 100vw;
+    height: 2px;
+    background-color: $basic-green;
+
+    @media #{$tablet} {
+      top: 22px;
+    }
+  }
+}
+
+.comment-group__textarea {
+  padding: 9px 12px 9px 15px;
+  margin-top: 38px;
+  width: 100%;
+  min-height: 150px;
+  font-family: $oswald-font;
+  font-size: 16px;
+  line-height: 18px;
+  border: 1px solid $basic-white-dark;
+  resize: vertical;
+  color: $special-gray-darker;
+  text-transform: uppercase;
+
+  @media #{$tablet} {
+    margin-top: 76px;
+    min-height: 174px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media #{$desktop} {
+    padding: 9px 18px;
+  }
+
+  &:hover {
+    border: 1px solid $special-gray;
+  }
+
+  &:focus {
+    padding: 8px 11px 8px 14px;
+    border: 2px solid $special-gray-darker;
+
+    @media #{$desktop} {
+      padding: 8px 17px;
+    }
+  }
+}

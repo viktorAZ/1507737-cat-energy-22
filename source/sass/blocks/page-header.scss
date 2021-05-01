@@ -26,49 +26,32 @@
 
 .page-header__wrapper {
   @media #{$tablet} {
-    padding: 40px 30px 20px;
+    padding: 25px 30px 14px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
 
   @media #{$desktop} {
-    padding: 69px 0 20px;
+    padding: 53px 0 20px;
   }
 }
 
 .page-header__logo {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px 0 12px;
-  max-width: 191px;
+  max-width: 205px;
+  padding: 13px 0 14px;
 
-  &[href]:hover {
+  @media #{$tablet} {
+    padding: 0;
+  }
+
+  &[href]:hover,
+  &[href]:focus {
     opacity: 0.8;
     cursor: pointer;
   }
 
   &[href]:active {
     opacity: 0.6;
-  }
-
-  @media #{$tablet} {
-    padding: 0;
-  }
-}
-
-.page-header__logo-icon {
-  @media #{$tablet} {
-    display: block;
-    width: 174px;
-    height: 52px;
-  }
-}
-
-.page-header__logo-text {
-  @media #{$tablet} {
-    display: none;
   }
 }

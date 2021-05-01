@@ -2,22 +2,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 22px;
   font-family: $arial-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: $description-text-color;
+  color: $special-gray-darker;
   cursor: pointer;
   text-transform: capitalize;
 
-  @media #{$tablet} {
-    padding-top: 0;
-  }
-
-  &:hover {
+  &:hover,
+  &:focus {
     .copyright__logo {
-      color: $main-color;
+      color: $basic-green;
     }
   }
 
@@ -27,7 +23,7 @@
 }
 
 .copyright__logo {
-  color: #666666;
+  color: $special-gray-dark;
 }
 
 .copyright__text {
@@ -35,9 +31,10 @@
 
   @media #{$tablet} {
     padding-right: 22px;
+    max-width: 170px;
   }
 
   &:active {
-    color: rgba($description-text-color, 0.3);
+    color: rgba($special-gray-darker, 0.3);
   }
 }

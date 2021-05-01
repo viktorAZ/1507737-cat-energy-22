@@ -1,9 +1,14 @@
 .extra-products {
-  padding: 27px 0 0;
+  padding: 24px 0 0;
   font-family: $oswald-font;
-  color: $basic-dark;
+  overflow: hidden;
+
+  @media #{$tablet} {
+    padding: 11px 0 0;
+  }
 
   @media #{$desktop} {
+    padding: 16px 0 0;
     padding-bottom: 86px;
   }
 }
@@ -17,17 +22,68 @@
 }
 
 .extra-products__title {
-  margin: 0 0 41px;
+  position: relative;
+  display: inline-block;
+  padding-right: 22px;
+  margin: 0 0 35px;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  color: $basic-black;
+  background-color: $basic-white;
 
   @media #{$tablet} {
+    padding: 0 36px 0 38px;
     font-size: 36px;
     line-height: 36px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 21px;
+      right: 100%;
+      width: 100vw;
+      height: 2px;
+      background-color: $basic-green;
+
+      @media #{$desktop} {
+        top: 23px;
+      }
+    }
   }
 
   @media #{$desktop} {
-    width: 100%;
+    padding: 0 35px 0 40px;
+    margin-left: -40px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 100%;
+    width: 100vw;
+    height: 2px;
+    background-color: $basic-green;
+
+    @media #{$tablet} {
+      top: 21px;
+    }
+
+    @media #{$desktop} {
+      top: 23px;
+    }
+  }
+}
+
+.extra-products__banner {
+  padding: 39px 0 35px;
+
+  @media #{$tablet} {
+    padding: 73px 0 76px;
+  }
+
+  @media #{$tablet} {
+    padding: 45px 0 0;
   }
 }

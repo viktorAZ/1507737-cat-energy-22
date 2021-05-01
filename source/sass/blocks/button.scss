@@ -5,13 +5,15 @@
   align-items: center;
   color: $basic-white;
   text-align: center;
-  background-color: $main-color;
+  background-color: $basic-green;
   border: none;
   cursor: pointer;
   text-transform: uppercase;
+  transition: color 0.3s, background-color 0.3s;
 
-  &:hover {
-    background-color: $secondary-color;
+  &:hover,
+  &:focus {
+    background-color: $secondary-green;
   }
 
   &:active {
@@ -19,15 +21,16 @@
   }
 
   &--gray {
-    color: $cat-product-text-color;
-    background-color: $more-button-color;
+    color: $special-gray-darker;
+    background-color: $basic-gray;
 
-    &:hover {
-      background-color: $btn-gray-hover-color;
+    &:hover,
+    &:focus {
+      background-color: $special-gray-light;
     }
 
     &:active {
-      color: rgba($cat-product-text-color, 0.3);
+      color: rgba($special-gray-darker, 0.3);
     }
   }
 }

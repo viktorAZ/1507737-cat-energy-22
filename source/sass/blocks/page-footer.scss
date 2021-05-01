@@ -1,13 +1,12 @@
 .page-footer {
-  padding: 39px 0 22px;
-  background-color: $footer-bg-color;
+  background-color: $basic-gray;
 
   @media #{$tablet} {
-    padding: 55px 0 61px;
+    padding: 24px 0 31px;
   }
 
   @media #{$desktop} {
-    padding: 57px 0 58px;
+    padding: 58px 0 57px;
   }
 }
 
@@ -19,13 +18,7 @@
   }
 }
 
-// FIXME:
 .page-footer__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 32px;
-
   &[href]:hover {
     opacity: 0.8;
     cursor: pointer;
@@ -34,12 +27,20 @@
   &[href]:active {
     opacity: 0.6;
   }
+}
 
-  img {
-    display: block;
-  }
+.page-footer__social {
+  padding: 22px 81px 20px 72px;
 
   @media #{$tablet} {
-    padding-bottom: 0;
+    padding: 0 0 4px 22px;
+  }
+}
+
+.page-footer__copyright {
+  padding: 22px 0 22px;
+
+  @media #{$tablet} {
+    padding: 0;
   }
 }

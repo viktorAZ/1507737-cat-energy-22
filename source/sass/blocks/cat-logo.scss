@@ -1,0 +1,19 @@
+.cat-logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cat-logo__head {
+  display: block;
+
+  @media #{$tablet} {
+    width: 174px;
+    height: 51px;
+  }
+
+  @media #{$desktop} {
+    width: 202px;
+    height: 59px;
+  }
+}

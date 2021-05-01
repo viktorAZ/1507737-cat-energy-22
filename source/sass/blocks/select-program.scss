@@ -2,20 +2,15 @@
   padding: 27px 0 0;
   font-family: $oswald-font;
   font-weight: 400;
-  color: $basic-dark;
+  color: $basic-black;
+  overflow: hidden;
 
   @media #{$tablet} {
-    padding-bottom: 72px;
+    padding: 51px 0 72px;
   }
 
-  .container {
-    @media #{$tablet} {
-      padding: 0 67px 0 71px;
-    }
-
-    @media #{$desktop} {
-      padding: 0;
-    }
+  @media #{$desktop} {
+    padding: 55px 0 82px;
   }
 }
 
@@ -25,9 +20,6 @@
   }
 
   @media #{$desktop} {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 0;
   }
 }
@@ -39,6 +31,7 @@
   line-height: 36px;
 
   @media #{$tablet} {
+    margin: 0 0 55px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -56,27 +49,28 @@
   }
 }
 
-.select-program__submit-block {
-  .container {
-    padding: 0 20px 0;
+.select-program__inner-column {
+  @media #{$desktop} {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+  }
+}
 
-    @media #{$tablet} {
-      padding: 0 67px 0 71px;
-      flex-direction: row;
-    }
+.select-program__submit-block {
+  margin-bottom: 32px;
 
-    @media #{$desktop} {
-      padding: 0;
-    }
+  @media #{$tablet} {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
   }
 }
 
 .select-program__button {
-  padding: 14px 44px;
-  width: 280px;
+  padding: 7px 24px;
+  width: 100%;
+  min-height: 40px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -84,21 +78,43 @@
 
   @media #{$tablet} {
     margin-right: 61px;
+    width: 282px;
+    max-width: 568px;
+    min-height: 52px;
+    font-size: 20px;
+  }
+
+  @media (min-width: 769px) {
+    width: 100%;
   }
 
   @media #{$desktop} {
-    width: 568px;
+    max-width: 568px;
+    margin-right: 81px;
   }
 }
 
-.select-program__notation {
+.select-program__require-text {
   margin: 0;
-  padding: 21px 0 32px;
+  padding: 21px 0 0;
   font-family: $arial-font;
   font-size: 14px;
   line-height: 16px;
+  text-align: center;
+  text-transform: none;
 
   @media #{$tablet} {
+    padding: 0 0 5px;
+    flex-shrink: 0;
+    font-size: 16px;
+  }
+
+  @media #{$desktop} {
     padding: 0;
+  }
+
+  sup {
+    font-size: inherit;
+    vertical-align: top;
   }
 }
