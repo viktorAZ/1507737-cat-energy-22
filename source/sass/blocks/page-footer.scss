@@ -6,7 +6,7 @@
   }
 
   @media #{$desktop} {
-    padding: 27px 0 31px;
+    padding: 58px 0 57px;
   }
 }
 
@@ -19,8 +19,6 @@
 }
 
 .page-footer__logo {
-  padding: 36px 0 31px;
-
   &[href]:hover {
     opacity: 0.8;
     cursor: pointer;
@@ -29,18 +27,13 @@
   &[href]:active {
     opacity: 0.6;
   }
-
-  .cat-logo__text {
-    flex-grow: 0;
-    padding: 0;
-  }
 }
 
 .page-footer__social {
   padding: 22px 81px 20px 72px;
 
   @media #{$tablet} {
-    padding: 0 0 0 18px;
+    padding: 0 0 4px 22px;
   }
 }
 

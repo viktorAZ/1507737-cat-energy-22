@@ -38,14 +38,11 @@
 }
 
 .page-header__logo {
-  padding: 14px 0;
+  max-width: 205px;
+  padding: 13px 0 14px;
 
   @media #{$tablet} {
     padding: 0;
-
-    .cat-logo__text {
-      display: none;
-    }
   }
 
   &[href]:hover,

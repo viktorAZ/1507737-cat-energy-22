@@ -123,10 +123,10 @@
 
 .promo-info__content {
   @media #{$tablet} {
-    margin-left: 87px;
+    margin-left: 85px;
   }
 
-  @media #{$tablet} {
+  @media #{$desktop} {
     margin-left: 80px;
   }
 }

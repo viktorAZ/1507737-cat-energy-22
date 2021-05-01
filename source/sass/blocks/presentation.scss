@@ -1,6 +1,6 @@
 .presentation {
   position: relative;
-  padding: 27px 0 36px;
+  padding: 27px 0 35px;
   font-family: $oswald-font;
   background-color: $basic-gray-dark;
 
@@ -149,7 +149,9 @@
 }
 
 .presentation__slider {
-  padding-bottom: 66px;
+  @media #{$desktop} {
+    padding-bottom: 66px;
+  }
 }
 
 .presentation__text-wrap {

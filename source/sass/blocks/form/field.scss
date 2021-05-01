@@ -1,0 +1,197 @@
+.field {
+  font: inherit;
+  height: 45px;
+  width: 100%;
+  color: $special-gray-darker;
+  border: 1px solid $basic-white-dark;
+  text-transform: uppercase;
+  cursor: text;
+
+  @media #{$tablet} {
+    height: 52px;
+  }
+
+  &:hover {
+    border: 1px solid $special-gray;
+  }
+
+  &:focus {
+    border: 2px solid $special-gray-darker;
+
+    & + .icon-email svg {
+      stroke: $basic-green;
+    }
+
+    & + .icon-phone svg {
+      fill: $basic-green;
+    }
+  }
+}
+
+.field-error,
+.field-error:hover,
+.field-error:active,
+.field-error:focus {
+  border-color: $error-color;
+
+  & + .icon-email svg {
+    stroke: $error-color;
+  }
+
+  & + .icon-phone svg {
+    fill: $error-color;
+  }
+}
+
+.input-label {
+  font: inherit;
+  flex-shrink: 0;
+  color: $special-gray-darker;
+  text-transform: uppercase;
+
+  sup {
+    font-size: inherit;
+    vertical-align: top;
+  }
+}
+
+.radio {
+  & + label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $special-gray;
+    border-radius: 50%;
+
+    @media #{$tablet} {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 9px;
+    width: 13px;
+    height: 13px;
+    background-color: $basic-green;
+    border-radius: 50%;
+
+    @media #{$tablet} {
+      left: 11px;
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  &:hover + label::before {
+    border: 1px solid #bababa;
+  }
+
+  &:focus + label::before {
+    box-shadow: 0 0 0 2px $basic-green;
+  }
+
+  &:disabled + label::before,
+  &:disabled + label::after,
+  &:disabled + .radio-label {
+    opacity: 0.3;
+  }
+}
+
+.radio-label {
+  position: relative;
+  padding-left: 45px;
+  color: $special-gray-darkest;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: opacity 0.3s;
+
+  @media #{$tablet} {
+    padding-left: 60px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    box-shadow: 0 0 1px 0 black;
+  }
+}
+
+.checkbox {
+  & + label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $special-gray;
+
+    @media #{$tablet} {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 6px;
+    width: 18px;
+    height: 14px;
+    background-image: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 19 15'%3E%3Cpath d='M7 11.718 1.3 5.27.25 6.457 7 14.094 18.25 1.366 17.2.094 7 11.718z' fill='%2368B738'/%3E%3C/svg%3E%0A");
+
+    @media #{$tablet} {
+      left: 11px;
+    }
+  }
+
+  &:hover + label::before {
+    border: 1px solid #bababa;
+  }
+
+  &:focus + label::before {
+    box-shadow: 0 0 0 2px $basic-green;
+  }
+
+  &:disabled + label::before,
+  &:disabled + label::after,
+  &:disabled + .checkbox-label {
+    opacity: 0.3;
+  }
+}
+
+.checkbox-label {
+  position: relative;
+  padding-left: 45px;
+  color: $special-gray-darkest;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: opacity 0.3s;
+
+  @media #{$tablet} {
+    padding-left: 59px;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    box-shadow: 0 0 1px 1px black;
+  }
+}

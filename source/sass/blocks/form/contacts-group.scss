@@ -1,0 +1,150 @@
+.contacts-group {
+  padding: 26px 0 10px;
+
+  @media #{$tablet} {
+    padding: 75px 0 0;
+  }
+
+  @media #{$desktop} {
+    padding: 0;
+  }
+}
+
+.contacts-group__title {
+  position: relative;
+  margin: 0 0 0 -20px;
+  padding: 0 23px 0 20px;
+  width: 224px;
+  max-width: 100%;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  color: $basic-black;
+  text-transform: none;
+  background-color: $basic-white;
+
+  @media (min-width: 600px) {
+    width: max-content;
+  }
+
+  @media #{$tablet} {
+    margin: 0 0 0 -41px;
+    padding: 0 41px 0 39px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      right: 100%;
+      width: 100vw;
+      height: 2px;
+      background-color: $basic-green;
+    }
+  }
+
+  @media #{$desktop} {
+    margin: 0 0 0 -39px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 100%;
+    width: 100vw;
+    height: 2px;
+    background-color: $basic-green;
+
+    @media #{$tablet} {
+      top: 22px;
+    }
+  }
+}
+
+.contacts-group__field-list {
+  padding-top: 21px;
+
+  @media #{$tablet} {
+    padding-top: 57px;
+  }
+
+  @media #{$desktop} {
+    padding-top: 75px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.contacts-group__field-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+  margin: 14px 0;
+
+  @media #{$tablet} {
+    margin: 19px 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media #{$desktop} {
+    margin: 0;
+    width: 100%;
+
+    &:not(:last-child) {
+      margin: 0 84px 0 0;
+    }
+  }
+}
+
+.contacts-group__input {
+  padding: 13px 40px 15px 14px;
+  margin-left: 11px;
+
+  @media #{$tablet} {
+    padding: 13px 40px 15px 20px;
+    margin-left: 19px;
+  }
+
+  &:focus {
+    padding: 12px 39px 14px 13px;
+
+    @media #{$tablet} {
+      padding: 12px 39px 14px 19px;
+
+      &[type="tel"] {
+        padding: 13px 39px 14px 12px;
+      }
+    }
+  }
+
+  &[type="tel"] {
+    padding: 13px 20px 15px;
+
+    @media #{$tablet} {
+      padding: 14px 40px 15px 13px;
+    }
+  }
+
+  &--error {
+    & + .contacts-group__icon-email path {
+      stroke: $error-color;
+    }
+
+    & + .contacts-group__icon-phone path {
+      fill: $error-color;
+    }
+  }
+}
+
+.contacts-group__icon-email,
+.contacts-group__icon-phone {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 17px;
+}

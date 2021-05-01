@@ -20,28 +20,21 @@
   <header class="page-header page-header--bg page-header--index">
     <div class="page-header__wrapper container">
       <a class="page-header__logo cat-logo">
-        <svg class="cat-logo__mobile" width="33" height="38">
-          <use xlink:href="img/sprite.svg#cat-logo-mobile" />
-        </svg>
-        <svg class="cat-logo__tablet" width="174" height="51">
-          <use xlink:href="img/sprite.svg#cat-logo-tablet" />
-        </svg>
-        <svg class="cat-logo__desktop" width="202" height="59">
-          <use xlink:href="img/sprite.svg#cat-logo-desktop" />
-        </svg>
-        <svg class="cat-logo__text" width="101" height="18">
-          <use xlink:href="img/sprite.svg#cat-text-logo" />
-        </svg>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo/cat-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo/cat-logo-tablet.svg">
+          <img class="cat-logo__head" src="img/logo/cat-logo-mobile.svg" width="190" height="37" alt="Логотип сайта Cat Energy">
+        </picture>
       </a>
 
-      <nav class="main-nav main-nav--closed main-nav--no-js">
+      <nav class="main-nav main-nav--no-js">
         <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Показать/Скрыть Меню</span>
+          <span class="visually-hidden">Показать/Скрыть Меню (Скрыто по умолчанию)</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--current">Главная</a>
+              <a class="main-nav__link main-nav__link--current" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
@@ -58,7 +51,7 @@
       <div class="promo-info__wrapper container">
         <h2 class="promo-info__content promo-info__title">Функциональное питание для котов</h2>
         <p class="promo-info__content promo-info__text">Занялся собой? Займись котом!</p>
-        <a href="form.html" class="promo-info__content promo-info__button button">подобрать программу</a>
+        <a href="form.html" class="promo-info__content promo-info__button button" aria-label="Перейти на страницу формы">подобрать программу</a>
         <picture>
           <source media="(min-width: 1440px)"
             srcset="img/promo-img/promo-product1-desktop.webp 1x, img/promo-img/promo-product1-desktop@2x.webp 2x"
@@ -89,7 +82,7 @@
         <h2 class="visually-hidden">Список программ тренировок</h2>
         <ul class="program__list">
           <li class="program__item program__item--slim">
-            <svg class="program__icon program__icon--slim" width="50" height="53">
+            <svg class="program__icon program__icon--slim" width="50" height="53" role="img" focusable="false">
               <use xlink:href="img/sprite.svg#cat-slim"></use>
             </svg>
             <h3 class="program__title">похудение</h3>
@@ -98,10 +91,10 @@
               Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
             <div class="program__link-block">
-              <a href="catalog.html" class="program__link">
+              <a href="catalog.html" class="program__link" aria-label="Перейти на страницу каталога">
                 каталог slim
                 <div class="program__link-icon">
-                  <svg width="32" height="12" viewBox="0 0 32 12" fill="#00" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="32" height="12" viewBox="0 0 32 12" fill="#00" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                     <path class="icon-arrow-line" stroke="#000" stroke-width="2" d="M0 6h18" />
                     <path class="icon-arrow-head" d="m24 6-6.75 5.196V.804L24 6z" fill="#000" />
                   </svg>
@@ -110,7 +103,7 @@
             </div>
           </li>
           <li class="program__item program__item--weight">
-            <svg class="program__icon program__icon--weight" width="67" height="50">
+            <svg class="program__icon program__icon--weight" width="67" height="50" role="img" focusable="false">
               <use xlink:href="img/sprite.svg#cat-weight"></use>
             </svg>
             <h3 class="program__title">набор массы</h3>
@@ -119,10 +112,10 @@
               нарастить необходимые мышцы!
             </p>
             <div class="program__link-block">
-              <a href="catalog.html" class="program__link">
+              <a href="catalog.html" class="program__link" aria-label="Перейти на страницу каталога">
                 каталог pro
                 <div class="program__link-icon">
-                  <svg width="32" height="12" viewBox="0 0 32 12" fill="#00" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="32" height="12" viewBox="0 0 32 12" fill="#00" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                     <path class="icon-arrow-line" stroke="#000" stroke-width="2" d="M0 6h18" />
                     <path class="icon-arrow-head" d="m24 6-6.75 5.196V.804L24 6z" fill="#000" />
                   </svg>
@@ -140,7 +133,7 @@
         <ol class="features__list">
           <li class="features__item features__item--natural">
             <div class="features__icon-block">
-              <svg width="30" height="32">
+              <svg width="30" height="32" aria-hidden="true" focusable="false">
                 <use xlink:href="img/sprite.svg#icon-leaf"></use>
               </svg>
             </div>
@@ -148,7 +141,7 @@
           </li>
           <li class="features__item features__item--powder">
             <div class="features__icon-block">
-              <svg width="29" height="31">
+              <svg width="29" height="31" aria-hidden="true" focusable="false">
                 <use xlink:href="img/sprite.svg#icon-tub"></use>
               </svg>
             </div>
@@ -157,7 +150,7 @@
           </li>
           <li class="features__item features__item--eat">
             <div class="features__icon-block">
-              <svg width="29" height="31">
+              <svg width="29" height="31" aria-hidden="true" focusable="false">
                 <use xlink:href="img/sprite.svg#icon-eat"></use>
               </svg>
             </div>
@@ -166,11 +159,11 @@
           </li>
           <li class="features__item features__item--time">
             <div class="features__icon-block">
-              <svg width="32" height="33">
+              <svg width="32" height="33" aria-hidden="true" focusable="false">
                 <use xlink:href="img/sprite.svg#icon-alarm"></use>
               </svg>
             </div>
-            <p class="features__description">Уже через месяц наслаждайтесь изменениями к лучшему &nbsp; вашего питомца!
+            <p class="features__description">Уже через месяц наслаждайтесь изменениями к лучшему&nbsp;вашего питомца!
             </p>
           </li>
         </ol>
@@ -240,7 +233,7 @@
             </picture>
           </div>
           <div class="cat-slider__control">
-            <button class="cat-slider__button cat-slider__button--before" type="button">было</button>
+            <button class="cat-slider__button cat-slider__button--before" type="button" aria-label="Показать состояние до тренировок">было</button>
             <div class="cat-slider__range">
               <div class="cat-slider__range-controls">
                 <div class="cat-slider__scale">
@@ -249,7 +242,7 @@
                 <div class="cat-slider__thumb" tabindex="0"></div>
               </div>
             </div>
-            <button class="cat-slider__button cat-slider__button--after" type="button">стало</button>
+            <button class="cat-slider__button cat-slider__button--after" type="button" aria-label="Показать состояние после тренировок">стало</button>
           </div>
         </div>
       </div>
@@ -272,29 +265,32 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper container">
-      <a class="page-footer__logo cat-logo">
-        <svg class="cat-logo__text" width="128" height="24">
+      <a class="page-footer__logo cat-logo" href="index.html">
+        <svg class="cat-logo__text" width="128" height="24" role="img" focusable="false">
           <use xlink:href="img/sprite.svg#cat-text-logo" />
         </svg>
       </a>
       <ul class="page-footer__social social">
         <li class="social__item">
-          <a href="#" class="social__link" title="Мы в VK">
-            <svg class="social__icon social__icon--vk" width="23" height="16">
+          <a href="#" class="social__link">
+            <span class="visually-hidden">Перейти на нашу страницу Вконтакте</span>
+            <svg class="social__icon social__icon--vk" width="23" height="16" aria-hidden="true" focusable="false">
               <use xlink:href="img/sprite.svg#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link" title="Мы в Instagram">
-            <svg class="social__icon social__icon--inst" width="16" height="16">
+            <span class="visually-hidden">Перейти на нашу страницу в Инстаграм</span>
+            <svg class="social__icon social__icon--inst" width="16" height="16" aria-hidden="true" focusable="false">
               <use xlink:href="img/sprite.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link" title="Мы в Facebook">
-            <svg class="social__icon social__icon--fb" width="13" height="20">
+            <span class="visually-hidden">Перейти на нашу страницу в Фейсбук</span>
+            <svg class="social__icon social__icon--fb" width="13" height="20" aria-hidden="true" focusable="false">
               <use xlink:href="img/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
@@ -303,7 +299,7 @@
       <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive"
         aria-label="Перейти на сайт HTMLAcademy">
         <p class="copyright__text">HTML Academy</p>
-        <svg class="copyright__logo" width="27" height="34">
+        <svg class="copyright__logo" width="27" height="34" role="img" focusable="false">
           <use xlink:href="img/sprite.svg#html-academy"></use>
         </svg>
       </a>
