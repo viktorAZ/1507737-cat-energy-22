@@ -12,16 +12,6 @@
   @media #{$desktop} {
     padding: 10px 0 0;
     background: linear-gradient(to bottom, $basic-white 201px, $basic-gray 159px);
-
-    &::after {
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      width: 625px;
-      height: 462px;
-      background-color: $basic-gray-dark;
-    }
   }
 }
 
