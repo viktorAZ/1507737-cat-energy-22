@@ -28,7 +28,7 @@
         </picture>
       </a>
 
-      <nav class="main-nav main-nav--closed main-nav--no-js">
+      <nav class="main-nav main-nav--no-js">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Показать/Скрыть Меню (Скрыто по умолчанию)</span>
         </button>
@@ -58,17 +58,17 @@
         </p>
         <form action="https://echo.htmlacademy.ru/" class="select-program__form" method="post">
           <div class="select-program__inner-column">
-            <div class="cat-info-group" role="group" aria-labelledby="pseudolegend">
-              <h3 class="visually-hidden">Основная информация о питомце</h3>
+            <div class="cat-info-group" role="group" aria-labelledby="cat-info-legend">
+              <h3 class="visually-hidden" id="cat-info-legend">Основная информация о питомце</h3>
               <div class="cat-info-group__field-list">
                 <div class="cat-info-group__field-item">
                   <label class="cat-info-group__label input-label" for="cat-name-input">
+                    <!-- Состояние ошибки в инпуте - field-error -->
                     имя:<sup aria-hidden="true">*</sup><span class="visually-hidden">(Обязательное поле)</span>
                   </label>
                   <input class="cat-info-group__input field" id="cat-name-input" name="cat-name" type="text"
                     placeholder="барсик" required>
                 </div>
-
                 <div class="cat-info-group__field-item">
                   <label class="cat-info-group__label input-label" for="cat-weight-input">
                     Вес (кг):<sup aria-hidden="true">*</sup><span class="visually-hidden">(Обязательное поле)</span>
@@ -83,8 +83,8 @@
                 </div>
               </div>
             </div>
-            <div class="choose-program-group" role="group" aria-labelledby="pseudolegend">
-              <h3 class="visually-hidden">Выберите программу тренировок</h3>
+            <div class="choose-program-group" role="group" aria-labelledby="choose-program-legend">
+              <h3 class="visually-hidden" id="choose-program-legend">Выберите программу тренировок</h3>
               <ul class="choose-program-group__field-list">
                 <li class="choose-program-group__field-item">
                   <input class="choose-program-group__radio radio visually-hidden" id="cat-slim-radio"
@@ -105,8 +105,8 @@
               </ul>
             </div>
           </div>
-          <div class="contacts-group" role="group" aria-labelledby="pseudolegend">
-            <h3 class="contacts-group__title" id="pseudolegend">Контактные данные (владельца кота)</h3>
+          <div class="contacts-group" role="group" aria-labelledby="contacts-legend">
+            <h3 class="contacts-group__title" id="contacts-legend">Контактные данные (владельца кота)</h3>
             <div class="contacts-group__field-list">
               <div class="contacts-group__field-item">
                 <label class="contacts-group__label input-label" for="owner-email-input">E-mail:<sup
@@ -134,14 +134,14 @@
               </div>
             </div>
           </div>
-          <div class="comment-group" role="group" aria-labelledby="pseudolegend">
-            <h3 class="comment-group__title" id="pseudolegend">Комментарий</h3>
+          <div class="comment-group" role="group" aria-labelledby="comment-legend">
+            <h3 class="comment-group__title" id="comment-legend">Комментарий</h3>
             <textarea class="comment-group__textarea message-field" id="owner-comment-input" name="owner-comment"
               placeholder="Расскажите обо всех повадках кота"></textarea>
             <label class="visually-hidden" for="owner-comment-input"></label>
           </div>
-          <div class="optional-group" role="group" aria-labelledby="pseudolegend">
-            <h3 class="optional-group__title" id="pseudolegend">Дополнительно</h3>
+          <div class="optional-group" role="group" aria-labelledby="optional-legend">
+            <h3 class="optional-group__title" id="optional-legend">Дополнительно</h3>
             <ul class="optional-group__field-list">
               <li class="optional-group__field-item">
                 <input class="optional-group__checkbox checkbox visually-hidden" id="add-sweetener-checkbox"

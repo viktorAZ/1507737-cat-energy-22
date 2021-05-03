@@ -17,6 +17,9 @@
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+
+  @media #{$desktop} {
     max-width: 630px;
   }
 }

@@ -19,12 +19,19 @@
 }
 
 .page-footer__logo {
-  &[href]:hover {
+  @media #{$mobile-only} {
+    padding: 36px 0 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &:hover {
     opacity: 0.8;
     cursor: pointer;
   }
 
-  &[href]:active {
+  &:active {
     opacity: 0.6;
   }
 }

@@ -28,10 +28,20 @@
   }
 }
 
+.cat-slider__demo::after {
+  content: "";
+  position: absolute;
+  left: 335px;
+  top: 192px;
+  width: 100vw;
+  height: 462px;
+  background-color: $basic-gray-dark;
+  z-index: -1;
+}
+
 .cat-slider__fat-img,
 .cat-slider__skinny-img {
   position: absolute;
-  bottom: 0;
 
   @media #{$tablet} {
     height: 510px;
