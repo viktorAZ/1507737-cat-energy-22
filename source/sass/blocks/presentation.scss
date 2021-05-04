@@ -3,6 +3,7 @@
   padding: 27px 0 35px;
   font-family: $oswald-font;
   background-color: $basic-gray-dark;
+  overflow: hidden;
 
   @media #{$tablet} {
     padding: 43px 0 67px;
