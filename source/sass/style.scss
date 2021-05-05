@@ -22,7 +22,6 @@
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
-@import "blocks/select-program.scss";
 @import "blocks/product-catalog.scss";
 @import "blocks/cat-product.scss";
 @import "blocks/extra-products.scss";
@@ -31,7 +30,7 @@
 
 // Form
 
-@import "blocks/form/field.scss";
+@import "blocks/form/select-program.scss";
 @import "blocks/form/cat-info-group.scss";
 @import "blocks/form/choose-program-group.scss";
 @import "blocks/form/comment-group.scss";

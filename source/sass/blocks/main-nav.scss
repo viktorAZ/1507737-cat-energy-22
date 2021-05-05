@@ -109,7 +109,7 @@
   }
 }
 
-.page-header--index .main-nav__link {
+.main-nav__list--index .main-nav__link {
   @media #{$desktop} {
     color: $basic-white;
 
@@ -124,7 +124,7 @@
   }
 }
 
-.page-header--index .main-nav__link--current {
+.main-nav__list--index .main-nav__link--current {
   cursor: default;
 
   @media #{$desktop} {

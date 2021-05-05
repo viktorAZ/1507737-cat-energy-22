@@ -112,6 +112,10 @@
   &:focus {
     padding: 12px 39px 14px 13px;
 
+    &[type="tel"] {
+      padding: 12px 39px 9px 13px;
+    }
+
     @media #{$tablet} {
       padding: 12px 39px 14px 19px;
 
@@ -122,7 +126,7 @@
   }
 
   &[type="tel"] {
-    padding: 13px 20px 15px;
+    padding: 13px 40px 10px 14px;
 
     @media #{$tablet} {
       padding: 14px 40px 15px 13px;
