@@ -68,6 +68,7 @@
 
   &[type="number"] {
     padding: 13px 20px 15px;
+    appearance: textfield;
 
     @media #{$tablet} {
       padding: 16px 21px 15px;

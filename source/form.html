@@ -62,24 +62,25 @@
               <h3 class="visually-hidden" id="cat-info-legend">Основная информация о питомце</h3>
               <div class="cat-info-group__field-list">
                 <div class="cat-info-group__field-item">
-                  <label class="cat-info-group__label input-label" for="cat-name-input">
-                    <!-- Состояние ошибки в инпуте - field-error -->
+                  <label class="cat-info-group__label select-program__input-label" for="cat-name-input">
+                    <!-- Состояние ошибки в инпуте - select-program__field--error -->
                     имя:<sup aria-hidden="true">*</sup><span class="visually-hidden">(Обязательное поле)</span>
                   </label>
-                  <input class="cat-info-group__input field" id="cat-name-input" name="cat-name" type="text"
-                    placeholder="барсик" required>
+                  <input class="cat-info-group__input select-program__field" id="cat-name-input" name="cat-name"
+                    type="text" placeholder="барсик" required>
                 </div>
                 <div class="cat-info-group__field-item">
-                  <label class="cat-info-group__label input-label" for="cat-weight-input">
+                  <label class="cat-info-group__label select-program__input-label" for="cat-weight-input">
                     Вес (кг):<sup aria-hidden="true">*</sup><span class="visually-hidden">(Обязательное поле)</span>
                   </label>
-                  <input class="cat-info-group__input field" id="cat-weight-input" name="cat-weight" type="number"
-                    placeholder="7" required>
+                  <input class="cat-info-group__input select-program__field" id="cat-weight-input" name="cat-weight"
+                    type="number" placeholder="7" required>
                 </div>
                 <div class="cat-info-group__field-item">
-                  <label class="cat-info-group__label input-label" for="cat-age-input">Возраст (лет):</label>
-                  <input class="cat-info-group__input field" id="cat-age-input" name="cat-age" type="number"
-                    placeholder="7" required>
+                  <label class="cat-info-group__label select-program__input-label" for="cat-age-input">Возраст
+                    (лет):</label>
+                  <input class="cat-info-group__input select-program__field" id="cat-age-input" name="cat-age"
+                    type="number" placeholder="7" required>
                 </div>
               </div>
             </div>
@@ -87,19 +88,22 @@
               <h3 class="visually-hidden" id="choose-program-legend">Выберите программу тренировок</h3>
               <ul class="choose-program-group__field-list">
                 <li class="choose-program-group__field-item">
-                  <input class="choose-program-group__radio radio visually-hidden" id="cat-slim-radio"
+                  <input class="choose-program-group__radio select-program__radio visually-hidden" id="cat-slim-radio"
                     name="cat-program" type="radio" value="Похудение" checked>
-                  <label class="choose-program-group__radio-label radio-label" for="cat-slim-radio">похудение</label>
+                  <label class="choose-program-group__radio-label select-program__radio-label"
+                    for="cat-slim-radio">похудение</label>
                 </li>
                 <li class="choose-program-group__field-item">
-                  <input class="choose-program-group__radio radio visually-hidden" id="cat-body-radio"
+                  <input class="choose-program-group__radio select-program__radio visually-hidden" id="cat-body-radio"
                     name="cat-program" type="radio" value="Набор массы">
-                  <label class="choose-program-group__radio-label radio-label" for="cat-body-radio">Набор массы</label>
+                  <label class="choose-program-group__radio-label select-program__radio-label"
+                    for="cat-body-radio">Набор массы</label>
                 </li>
                 <li class="choose-program-group__field-item">
-                  <input class="choose-program-group__radio radio visually-hidden" id="cat-advice-radio"
+                  <input class="choose-program-group__radio select-program__radio visually-hidden" id="cat-advice-radio"
                     name="cat-program" type="radio" value="Не знаю (Нужен ваш совет)">
-                  <label class="choose-program-group__radio-label radio-label" for="cat-advice-radio">Не знаю (Нужен ваш
+                  <label class="choose-program-group__radio-label select-program__radio-label" for="cat-advice-radio">Не
+                    знаю (Нужен ваш
                     совет)</label>
                 </li>
               </ul>
@@ -109,11 +113,11 @@
             <h3 class="contacts-group__title" id="contacts-legend">Контактные данные (владельца кота)</h3>
             <div class="contacts-group__field-list">
               <div class="contacts-group__field-item">
-                <label class="contacts-group__label input-label" for="owner-email-input">E-mail:<sup
+                <label class="contacts-group__label select-program__input-label" for="owner-email-input">E-mail:<sup
                     aria-hidden="true">*</sup><span class="visually-hidden">(Обязательное поле)</span>
                 </label>
-                <input class="contacts-group__input field" id="owner-email-input" name="owner-email" type="email"
-                  placeholder="kuklachev@gmail.com" required>
+                <input class="contacts-group__input select-program__field" id="owner-email-input" name="owner-email"
+                  type="email" placeholder="kuklachev@gmail.com" required>
                 <div class="contacts-group__icon-email icon-email">
                   <svg fill="none" stroke="#222" width="18" height="13" aria-hidden="true" focusable="false">
                     <use xlink:href="img/sprite.svg#icon-email" />
@@ -121,11 +125,11 @@
                 </div>
               </div>
               <div class="contacts-group__field-item">
-                <label class="contacts-group__label input-label" for="owner-phone-input">
+                <label class="contacts-group__label select-program__input-label" for="owner-phone-input">
                   Телефон:<sup aria-hidden="true">*</sup><span class="visually-hidden">(Обязательное поле)</span>
                 </label>
-                <input class="contacts-group__input field" id="owner-phone-input" name="owner-phone" type="tel"
-                  placeholder="8 (960) 900-60-90" required>
+                <input class="contacts-group__input select-program__field" id="owner-phone-input" name="owner-phone"
+                  type="tel" placeholder="8 (960) 900-60-90" required>
                 <div class="contacts-group__icon-phone icon-phone">
                   <svg fill="#222" width="20" height="20" aria-hidden="true" focusable="false">
                     <use xlink:href="img/sprite.svg#icon-phone" />
@@ -136,34 +140,37 @@
           </div>
           <div class="comment-group" role="group" aria-labelledby="comment-legend">
             <h3 class="comment-group__title" id="comment-legend">Комментарий</h3>
-            <textarea class="comment-group__textarea message-field" id="owner-comment-input" name="owner-comment"
-              placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="comment-group__textarea select-program__field" id="owner-comment-input"
+              name="owner-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             <label class="visually-hidden" for="owner-comment-input"></label>
           </div>
           <div class="optional-group" role="group" aria-labelledby="optional-legend">
             <h3 class="optional-group__title" id="optional-legend">Дополнительно</h3>
             <ul class="optional-group__field-list">
               <li class="optional-group__field-item">
-                <input class="optional-group__checkbox checkbox visually-hidden" id="add-sweetener-checkbox"
-                  name="add-sweetener" type="checkbox" checked>
-                <label class="optional-group__checkbox-label checkbox-label"
+                <input class="optional-group__checkbox select-program__checkbox visually-hidden"
+                  id="add-sweetener-checkbox" name="add-sweetener" type="checkbox" checked>
+                <label class="optional-group__checkbox-label select-program__checkbox-label"
                   for="add-sweetener-checkbox">сахарозаменитель</label>
               </li>
               <li class="optional-group__field-item">
-                <input class="optional-group__checkbox checkbox visually-hidden" id="add-water-checkbox"
+                <input class="optional-group__checkbox select-program__checkbox visually-hidden" id="add-water-checkbox"
                   name="add-water" type="checkbox">
-                <label class="optional-group__checkbox-label checkbox-label" for="add-water-checkbox">питьевая
+                <label class="optional-group__checkbox-label select-program__checkbox-label"
+                  for="add-water-checkbox">питьевая
                   вода</label>
               </li>
               <li class="optional-group__field-item">
-                <input class="optional-group__checkbox checkbox visually-hidden" id="add-milk-checkbox" name="add-milk"
-                  type="checkbox">
-                <label class="optional-group__checkbox-label checkbox-label" for="add-milk-checkbox">молоко</label>
+                <input class="optional-group__checkbox select-program__checkbox visually-hidden" id="add-milk-checkbox"
+                  name="add-milk" type="checkbox">
+                <label class="optional-group__checkbox-label select-program__checkbox-label"
+                  for="add-milk-checkbox">молоко</label>
               </li>
               <li class="optional-group__field-item">
-                <input class="optional-group__checkbox checkbox visually-hidden" id="add-vitamin-checkbox"
-                  name="add-vitamin" type="checkbox">
-                <label class="optional-group__checkbox-label checkbox-label" for="add-vitamin-checkbox">витамины</label>
+                <input class="optional-group__checkbox select-program__checkbox visually-hidden"
+                  id="add-vitamin-checkbox" name="add-vitamin" type="checkbox">
+                <label class="optional-group__checkbox-label select-program__checkbox-label"
+                  for="add-vitamin-checkbox">витамины</label>
               </li>
             </ul>
           </div>

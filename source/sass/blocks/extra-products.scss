@@ -8,8 +8,7 @@
   }
 
   @media #{$desktop} {
-    padding: 16px 0 0;
-    padding-bottom: 86px;
+    padding: 75px 0 86px;
   }
 }
 
@@ -77,13 +76,13 @@
 }
 
 .extra-products__banner {
-  padding: 39px 0 35px;
+  padding: 40px 0 35px;
 
   @media #{$tablet} {
-    padding: 73px 0 76px;
+    padding: 67px 0 76px;
   }
 
-  @media #{$tablet} {
+  @media #{$desktop} {
     padding: 45px 0 0;
   }
 }

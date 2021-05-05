@@ -33,7 +33,7 @@
           <span class="visually-hidden">Показать/Скрыть Меню (Скрыто по умолчанию)</span>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
+          <ul class="main-nav__list main-nav__list--index">
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--current" href="index.html">Главная</a>
             </li>
@@ -95,13 +95,6 @@
             <div class="program__link-block">
               <a href="catalog.html" class="program__link" aria-label="Перейти на страницу каталога">
                 каталог slim
-                <div class="program__link-icon">
-                  <svg width="32" height="12" viewBox="0 0 32 12" fill="#00" xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true" focusable="false">
-                    <path class="icon-arrow-line" stroke="#000" stroke-width="2" d="M0 6h18" />
-                    <path class="icon-arrow-head" d="m24 6-6.75 5.196V.804L24 6z" fill="#000" />
-                  </svg>
-                </div>
               </a>
             </div>
           </li>
@@ -117,13 +110,6 @@
             <div class="program__link-block">
               <a href="catalog.html" class="program__link" aria-label="Перейти на страницу каталога">
                 каталог pro
-                <div class="program__link-icon">
-                  <svg width="32" height="12" viewBox="0 0 32 12" fill="#00" xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true" focusable="false">
-                    <path class="icon-arrow-line" stroke="#000" stroke-width="2" d="M0 6h18" />
-                    <path class="icon-arrow-head" d="m24 6-6.75 5.196V.804L24 6z" fill="#000" />
-                  </svg>
-                </div>
               </a>
             </div>
           </li>
@@ -267,6 +253,14 @@
         </div>
       </div>
       <div class="location__map">
+        <picture>
+          <source media="(min-width: 1440px)"
+            srcset="img/map-fallback-desktop.png">
+          <source media="(min-width: 768px)"
+            srcset="img/map-fallback-tablet.png 1x">
+          <img class="location__fallback-map" src="img/map-fallback-mobile.png" alt="Карта расположения магазина"
+            width="320" height="362">
+        </picture>
         <iframe src="https://yandex.ru/map-widget/v1/-/CCUUyFCUOC" width="320" height="362"></iframe>
       </div>
     </section>

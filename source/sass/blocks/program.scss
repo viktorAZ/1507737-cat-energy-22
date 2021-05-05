@@ -159,12 +159,10 @@
   }
 }
 
-
 .program__link {
   position: relative;
   display: inline-flex;
   align-items: center;
-  padding-right: 46px;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -174,39 +172,36 @@
   transition: 0.2s;
 
   @media #{$tablet} {
-    padding-right: 56px;
     font-size: 20px;
     line-height: 30px;
   }
 
-  @media #{$desktop} {
-    padding-right: 60px;
+  &::after {
+    content: "";
+    margin-left: 17px;
+    display: inline-block;
+    flex: 0 0 auto;
+    width: 32px;
+    height: 12px;
+    background-image: url("../img/stack.svg#icon-link-arrow");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -8px center;
+    transition: background-position 0.2s;
+
+    @media #{$tablet} {
+      margin-left: 25px;
+    }
   }
 
   &:hover,
   &:focus {
-    .icon-arrow-line {
-      d: path("M0 6h28");
-    }
-
-    .icon-arrow-head {
-      d: path("m32 6-6.75 5.196V.804L32 6z");
+    &::after {
+      background-position: 0 center;
     }
   }
 
   &:active {
     opacity: 0.3;
-  }
-}
-
-.program__link-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  right: 0;
-
-  path {
-    transition: ease-out 0.2s;
   }
 }
