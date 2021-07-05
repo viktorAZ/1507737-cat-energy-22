@@ -14,13 +14,15 @@ const htmlmin = require('gulp-htmlmin');
 const terser = require('gulp-terser');
 const svgstore = require('gulp-svgstore');
 const cheerio = require('gulp-cheerio');
-const svgsprite = require('gulp-svg-sprite');
+const svgStack = require('gulp-svg-sprite');
 
 // HTML
 
 const html = () => {
   return gulp.src('./source/**/*.html')
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(htmlmin({
+      collapseWhitespace: true
+    }))
     .pipe(gulp.dest('./build'));
 }
 
@@ -33,9 +35,10 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
-    .pipe(postcss([autoprefixer()]))
-    .pipe(gulp.dest('./build/css'))
-    .pipe(postcss([csso()]))
+    .pipe(postcss([
+      autoprefixer(),
+      csso()
+    ]))
     .pipe(rename('style.min.css'))
     .pipe(sourcemap.write('.'))
     .pipe(gulp.dest('./build/css'))
@@ -77,8 +80,12 @@ exports.server = server;
 const optimizeImages = () => {
   return gulp.src('./source/img/**/*.{jpg,png,svg}')
     .pipe(imagemin([
-      imagemin.optipng({ optimizationLevel: 3 }),
-      imagemin.mozjpeg({ progressive: true }),
+      imagemin.optipng({
+        optimizationLevel: 3
+      }),
+      imagemin.mozjpeg({
+        progressive: true
+      }),
       imagemin.svgo()
     ]))
     .pipe(gulp.dest('./build/img'))
@@ -97,7 +104,9 @@ exports.images = copyImages;
 
 const createWebp = () => {
   return gulp.src('./source/img/**/*.{jpg,png}')
-    .pipe(webp({ quality: 90 }))
+    .pipe(webp({
+      quality: 90
+    }))
     .pipe(gulp.dest('./build/img'))
 }
 
@@ -107,21 +116,27 @@ exports.createWebp = createWebp;
 
 const sprite = () => {
   return gulp.src('./source/img/icons/*.svg')
-    .pipe(svgstore({ inlineSvg: true }))
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
     .pipe(cheerio({
       run: function ($) {
         $('svg').attr('style', 'display: none;');
       },
-      parserOptions: { xmlMode: true }
+      parserOptions: {
+        xmlMode: true
+      }
     }))
     .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('./build/img'));
 }
 
+exports.sprite = sprite;
+
 const svgstack = () => {
   return gulp.src('./source/img/icons/**/*.svg')
     .pipe(plumber())
-    .pipe(svgsprite({
+    .pipe(svgStack({
       mode: {
         stack: {}
       }
@@ -130,7 +145,6 @@ const svgstack = () => {
     .pipe(gulp.dest('./build/img'));
 }
 
-exports.sprite = sprite;
 exports.svgstack = svgstack;
 
 //  Copy
